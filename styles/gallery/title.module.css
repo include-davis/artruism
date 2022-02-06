@@ -1,0 +1,19 @@
+.title {
+    font-family: Catamaran;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+.description {
+    font-family: Catamaran;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
