@@ -1,54 +1,26 @@
-import Link from "next/link";
-import Head from "next/head";
+import Head from "next/head"
 
-function Title() {
-    return (
-        <div className="artwork">
-            <Link href="./ArtGallery.js">
-                <a>Back to Home</a>
-            </Link>
-            <h1>Art Gallery</h1>
-            <p>Description</p>
-            <input className="search-bar" placeholder="Search by artist name or title"></input>
-        </div>
-    )
-}
+import Nav from '../../components/nav'
+import Title from '../../components/gallery/detail/title'
+import Artwork from '../../components/gallery/detail/artwork'
+import Description from '../../components/gallery/detail/description'
 
-function Artwork() {
-    return (
-        <div>
-
-        </div>
-    )
-}
-
-function Description() {
-    return (
-        <div className="detail">
-            <div className="navigation">
-                <button>Previous</button>
-                <button>Next</button>
-            </div>
-            <div className="description">
-                <h1>Art Title</h1>
-                <p>By Artist:</p>
-                <p>Date:</p>
-                <p>Description</p>
-            </div>
-        </div>
-    )
-}
+import styles from "../../styles/gallery/detail.module.css"
 
 function DetailView() {
     return (
-        <div className="container">
+        <div className={styles.container}>
             <Head>
                 <title>Artruism | Art Gallery</title>
             </Head>
             <Nav />
-            <Title />
-            <Artwork />
-            <Description />
+            <div className={styles.container2}>
+                <div>
+                    <Title />
+                    <Artwork />
+                </div>
+                <Description />
+            </div>
         </div>
     )
 }
