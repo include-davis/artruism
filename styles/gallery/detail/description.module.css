@@ -3,9 +3,11 @@
     justify-content: center;
     background: #F5EFF5;
     width: 20%;
-    padding-top: 10em;
+    padding-top: 15em;
     padding-left: 3em;
     padding-right: 3em;
+    margin-right: -4em;
+    margin-top: -4em;
 }
 
 .description {

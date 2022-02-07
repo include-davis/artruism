@@ -10,7 +10,6 @@ function Title() {
             </Link>
             <h1>Art Gallery</h1>
             <p>Description</p>
-            <input className={styles.searchBar} placeholder="Search by artist name or title"></input>
         </div>
     )
 }

@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 15em;
+    border-bottom: 1px solid #A16373;
+}
+
+#searchBar {
+    border: none;
+    background: none;
+    outline: none;
+    width: 20em;
+    padding-left: 1em;
+    padding-bottom: 5px;
+}
+
+.peopleList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.peopleList > img {
+    height: auto;
+    max-height: 20rem;
+    width: 15rem;
+    overflow: hidden;
+    transition: all .25s ease;
+}
+
+.peopleList > img:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}

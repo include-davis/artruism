@@ -8,8 +8,10 @@ function Gallery() {
     return (
         <div className={styles.container}>
             <Title />
-            <Artwork />
-            <DetailButton />
+            <div className={styles.container2}>
+                <Artwork />
+                <DetailButton />
+            </div>
         </div>
     );
 }
