@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 15em;
+    border-bottom: 1px solid #A16373;
+}
+
+.searchBar {
+    border: none;
+    background: none;
+    outline: none;
+    width: 20em;
+    padding-left: 1em;
+    padding-bottom: 5px;
+}
+
+.peopleList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.peopleList > div {
+    height: 20rem;
+    width: 15rem;
+    overflow: hidden;
+    transition: all .25s ease;
+}
+
+.peopleList > div:hover {
+    box-shadow: 0 0 10px 10px rgba(161, 99, 115, 0.7);
+}
+
+.peopleList > div > img {
+    width: 15rem;
+    overflow: hidden;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    background: #F5EFF5;
+    width: 20%;
+    padding-top: 15em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-right: -5%;
+    margin-top: -12%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    align-content: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.button {
+    border: none;
+    background: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}

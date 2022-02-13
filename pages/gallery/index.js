@@ -7,9 +7,12 @@ import styles from '../../styles/gallery/index.module.css'
 function Gallery() {
     return (
         <div className={styles.container}>
+            <style>@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');</style>
             <Title />
-            <Artwork />
-            <DetailButton />
+            <div className={styles.container2}>
+                <Artwork />
+                <DetailButton />
+            </div>
         </div>
     );
 }
