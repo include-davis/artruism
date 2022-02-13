@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     position: static;
@@ -18,6 +18,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    margin: 2em;
 
     position: static;
     width: 273px;
@@ -44,4 +46,11 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        height: 1500px;
+    }
 }
