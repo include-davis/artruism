@@ -1,6 +1,6 @@
-import {FaSearch} from "react-icons/fa"
-import {FaTimes} from "react-icons/fa"
+import { FaSearch, FaTimes } from "react-icons/fa"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -9,18 +9,26 @@ import styles from "../../../styles/gallery/detail/artwork.module.css"
 function Artwork() {
     useEffect(() => {
         Aos.init({ duration: 1000 });
+        loadPeople();
     }, []);
-    
-    const [searchTerm, setSearchTerm] = useState("");
 
     let hpPeople = [];
+
+    const harry = {
+        name: "Harry Potter",
+        house: "Gryffindor"
+    }
+    
+    const [people, setPeople] = useState([])
+    const [featuredPerson, setFeaturedPerson] = useState(harry)
+    const [searchTerm, setSearchTerm] = useState("")
 
     // loadPeople won't be required if the art is just going to be directly put into an array.
     const loadPeople = async () => {
         try {
             const res = await fetch('https://hp-api.herokuapp.com/api/characters');
             hpPeople = await res.json();
-            displayPeople(hpPeople);
+            setPeople(hpPeople)
         } catch(err) {
             console.error(err);
         }
@@ -29,91 +37,65 @@ function Artwork() {
     const FeaturedTile = () => {
         return (
             <div>
-                <h1>{featuredPersonName}</h1>
-                <p>{featuredPersonHouse}</p>
+                <h1>{featuredPerson.name}</h1>
+                <p>{featuredPerson.house}</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ornare quam viverra orci sagittis eu.</p>
             </div>
         )
     }
 
-    // FIXME: search bar currently not working
-    // const searchBar = document.getElementById('searchBar');
-
-    // searchBar.addEventListener('keyup', (input) => {
-    //     const searchString = input.target.value.toLowerCase();
-
-    //     const filteredPeople = hpPeople.filter((person) => {
-    //         return (
-    //             person.name.toLowerCase().includes(searchString)
-    //         );
-    //     });
-    //      displayPeople(filteredPeople);
-    // });
-
-    function clearInput() {
-        const searchBar = document.getElementById('searchBar');
-        searchBar.value = "";
+    const nextPerson = () => {
+        setFeaturedPerson
     }
 
-    const displayPeople = (people) => {
-        const peopleList = document.getElementById('peopleList');
-        hpPeople
-            .filter(person => {
-                if (searchTerm == "") {
-                    return person;
-                } else if (person.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-                    return person;
-                }
-            })
-            .forEach(person => {
-                // return (
-                //     <div onClick={() => {setFeaturedPersonName(person.name), setFeaturedPersonHouse(person.house)}}>
-                //         <img src={person.image}></img>
-                //     </div>
-                // )
-                const imageDiv = document.createElement('div');
-                const image = document.createElement('img');
-                imageDiv.onClick = () => {
-                    setFeaturedPersonName(person.name);
-                    setFeaturedPersonHouse(person.house);
-                }
-                image.src = person.image;
-                imageDiv.appendChild(image);
-                peopleList.appendChild(imageDiv);
-            })
-    };
-
-    loadPeople();
-
-    const [featuredPersonName, setFeaturedPersonName] = useState("Name") // hpPeople[0].name doesn't work, not defined yet, this should work when we have an image array
-    const [featuredPersonHouse, setFeaturedPersonHouse] = useState("House") // hpPeople[0].house doesn't work, not defined yet
+    const previousPerson = () => {
+        setFeaturedPerson
+    }
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.search}>
+                <div data-aos="fade" className={styles.container}>
+                    <Link href="/gallery/">
+                        <a className={styles.home}>&lt; Back to Home</a>
+                    </Link>
+                    <h1>Art Gallery</h1>
+                    <p>Description</p>
+                </div>
+                <div data-aos="fade" className={styles.search}>
                     <FaSearch />
                     <input 
+                        type="text"
                         id="searchBar"
                         className={styles.searchBar}
                         placeholder="Search by artist name or title"
-                        onChange={(event) => {
-                            setSearchTerm(event.target.value);
-                            displayPeople(hpPeople);
-                        }}
+                        value={searchTerm}
+                        onInput={e => setSearchTerm(() => e.target.value)}
                     />
-                    <FaTimes onClick={clearInput}/>
+                    <FaTimes onClick={() => setSearchTerm("")}/>
                 </div>
-                <div data-aos="fade" data-aos-delay="150" id="peopleList" className={styles.peopleList}></div>
+                <div data-aos="fade" data-aos-delay="150" className={styles.peopleList}>
+                    {people.filter(person => {
+                        if (searchTerm === "") {
+                            return person; 
+                        } else if (person.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            return person;
+                        }
+                    }).map(person => {
+                        return (
+                            <div onClick={() => setFeaturedPerson(person)}>
+                                <img src={person.image} alt={person.name}/>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
-            <div data-aos="fade" data-aos-delay="300" className={styles.container2}>
-                <div className={styles.description}>
-                    <div className={styles.navigation}>
-                        <button className={styles.button}>&lt; Previous</button>
-                        <button className={styles.button}>Next &gt;</button>
-                    </div>
-                    <FeaturedTile />
+            <div data-aos="fade" data-aos-delay="300" className={styles.description}>
+                <div className={styles.navigation}>
+                    <button className={styles.button} onClick={previousPerson}>&lt; Previous</button>
+                    <button className={styles.button} onClick={nextPerson}>Next &gt;</button>
                 </div>
+                <FeaturedTile />
             </div>
         </div>
     )

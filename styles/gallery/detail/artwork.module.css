@@ -1,15 +1,23 @@
 .wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .container {
-    width: 100%;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 90%;
+}
+
+.home:hover {
+    text-decoration: underline;
 }
 
 .search {
     display: flex;
     flex-direction: row;
+    margin-left: 2em;
     width: 15em;
     border-bottom: 1px solid #A16373;
 }
@@ -46,20 +54,19 @@
     overflow: hidden;
 }
 
-.container2 {
+.description {
     display: flex;
+    justify-self: right;
     justify-content: center;
     background: #F5EFF5;
     width: 20%;
-    padding-top: 15em;
-    padding-left: 3em;
-    padding-right: 3em;
-    margin-right: -5%;
-    margin-top: -12%;
-}
-
-.description {
-    display: flex;
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 2em;
+    overflow-x: hidden;
     flex-direction: column;
     word-wrap: break-word;
     align-content: center;
