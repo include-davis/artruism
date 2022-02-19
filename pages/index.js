@@ -12,7 +12,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Artruism</title>
+        <title>Artruism at UC Davis</title>
+        <meta name="description" content="Artruism is a club at UC Davis committed to drawing for a difference."></meta>
       </Head>
       <About />
       <Gallery />

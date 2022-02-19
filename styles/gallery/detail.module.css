@@ -2,9 +2,3 @@
     display: flex;
     flex-direction: column;
 }
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
