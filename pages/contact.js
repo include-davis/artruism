@@ -17,9 +17,7 @@ function Contact() {
           <title>"Questions? Reach Out!"</title>
         </Head>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
-      </div>
-
-      <div className={styles.container}>
+     
           < form className={styles.main} >
               
           < formGroup className={styles.inputGroup} >
@@ -54,8 +52,8 @@ function Contact() {
 
           < input type='submit'/>
           </form >
-      </div>
 
+      </div>
         
     )
 }
