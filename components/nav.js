@@ -20,6 +20,15 @@ function Nav() {
                     <li>Contact Us</li>
                 </ul>
             </div>
+            <div className={styles.side_navbar}>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Gallery</li>
+                    <li>Events</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
         </div>
 
     )

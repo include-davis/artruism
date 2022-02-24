@@ -2,13 +2,13 @@ import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import { useState } from 'react'
 
-const [firstName, setFirstName] = useState('')
-const [lastName, setLastName] = useState('')
-const [email, setEmail] = useState('')
-const [number, setNumber] = useState('')
-const [reason, setReason] = useState('')
-const [notes, setNotes] = useState('')
-const [submitted, setSubmitted] = useState(false)
+// const [firstName, setFirstName] = useState('')
+// const [lastName, setLastName] = useState('')
+// const [email, setEmail] = useState('')
+// const [number, setNumber] = useState('')
+// const [reason, setReason] = useState('')
+// const [notes, setNotes] = useState('')
+// const [submitted, setSubmitted] = useState(false)
 
 function Contact() {
     return (
