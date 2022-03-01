@@ -10,22 +10,127 @@
 }
 
 .containerinfo{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
 
     position: absolute;
-    width: 569px;
+    width: 896px;
     height: 448px;
-    left: 25%;
     top: 147px;
 
     background: #D4B7DF;
     border-radius: 10px 0px 0px 10px;
 }
 
+.containerform{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    position: absolute;
+    width: 458px;
+    height: 448px;
+    left: 50%;
+    top: 147px;
+
+    background: #FCF7F8;
+    border: 1px solid #232020;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Text */
+/* Questions? Reach Out! */
+.title{
+    position: static;
+    width: 402px;
+    height: 52px;
+    left: 166px;
+    top: 0px;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 52px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #232020;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+.subtitle{
+    position: static;
+    width: 734px;
+    height: 23px;
+    left: 0px;
+    top: 60px;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #232020;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+/* Contact Information */
+.heading{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #232020;
+}
+
+/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
+.subheading{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    
+    color: #232020;
+}
+
+/* Our Location; Connect With Us */
+.heading2{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #232020;
+}
+
+/* Contact Information Containers */
 .containerdescr{
     position: static;
     width: 237px;
@@ -66,7 +171,7 @@
 }
 
 .containerconnect2{
-    margin: 0px 16px;
+    margin: 0px 18px;
 }
 
 .containerconnectsocials{
@@ -82,110 +187,7 @@
     margin: 0px 0px;
 }
 
-
-.containerform{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-
-    position: absolute;
-    width: 458px;
-    height: 448px;
-    left: 49%;
-    top: 147px;
-
-    background: #FCF7F8;
-    border: 1px solid #232020;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.title{
-    position: static;
-    width: 402px;
-    height: 52px;
-    left: 166px;
-    top: 0px;
-
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 52px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.04em;
-
-    color: #232020;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 8px 0px;
-}
-
-.subtitle{
-    position: static;
-    width: 734px;
-    height: 23px;
-    left: 0px;
-    top: 60px;
-
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.04em;
-
-    color: #232020;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 8px 0px;
-}
-
-.heading{
-    /* Contact Information */
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-
-    color: #232020;
-}
-
-.subheading{
-    /* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    
-    color: #232020;
-}
-
-.heading2{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 23px;
-
-    color: #232020;
-}
-
-/*form*/
-
+/* Form Containers */
 .containerfirstname{
     position: absolute;
     width: 180px;
