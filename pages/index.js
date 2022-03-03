@@ -11,17 +11,19 @@ import Nav from '../components/nav'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Head>
         <title>Artruism at UC Davis</title>
         <meta name="description" content="Artruism is a club at UC Davis committed to drawing for a difference."></meta>
       </Head>
-      <Nav />
-      <About />
-      <Gallery />
-      <Calendar />
-      <Join />
-      <Contact />
+      <div className={styles.container}>
+        <Nav />
+        <About />
+        <Gallery />
+        <Calendar />
+        <Join />
+        <Contact />
+      </div>
     </div>
   )
 }

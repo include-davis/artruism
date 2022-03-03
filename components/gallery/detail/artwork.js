@@ -15,13 +15,21 @@ function Artwork() {
     let hpPeople = [];
 
     const harry = {
-        name: "Harry Potter",
-        house: "Gryffindor"
+        name: "Click on a piece to learn more!"
     }
     
     const [people, setPeople] = useState([])
     const [featuredPerson, setFeaturedPerson] = useState(harry)
     const [searchTerm, setSearchTerm] = useState("")
+    const [click, setClick] = useState('false');
+
+    const handleClick = () => {
+        if (click === 'false') {
+            setClick('true');
+        } else {
+            setClick('false');
+        }
+    }
 
     // loadPeople won't be required if the art is just going to be directly put into an array.
     const loadPeople = async () => {
@@ -35,6 +43,7 @@ function Artwork() {
     };
 
     const FeaturedTile = () => {
+        console.log(click)
         return (
             <div>
                 <h1>{featuredPerson.name}</h1>
@@ -44,19 +53,11 @@ function Artwork() {
         )
     }
 
-    const nextPerson = () => {
-        setFeaturedPerson
-    }
-
-    const previousPerson = () => {
-        setFeaturedPerson
-    }
-
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <div data-aos="fade" className={styles.container}>
-                    <Link href="/gallery/">
+                    <Link href="/">
                         <a className={styles.home}>&lt; Back to Home</a>
                     </Link>
                     <h1>Art Gallery</h1>
@@ -83,18 +84,20 @@ function Artwork() {
                         }
                     }).map(person => {
                         return (
-                            <div onClick={() => setFeaturedPerson(person)}>
+                            <div onClick={() => {
+                                    setFeaturedPerson(person);
+                                    setClick('true')
+                                }
+                            }>
                                 <img src={person.image} alt={person.name}/>
                             </div>
                         )
                     })}
                 </div>
             </div>
-            <div data-aos="fade" data-aos-delay="300" className={styles.description}>
-                <div className={styles.navigation}>
-                    <button className={styles.button} onClick={previousPerson}>&lt; Previous</button>
-                    <button className={styles.button} onClick={nextPerson}>Next &gt;</button>
-                </div>
+            <div data-aos="fade" data-aos-delay="300" className={styles.description} visible={click}>
+                <FaTimes className={styles.exit} onClick={handleClick} size={35} visible={click}/>
+                <img className={styles.image} src={featuredPerson.image} visible={click}/>
                 <FeaturedTile />
             </div>
         </div>

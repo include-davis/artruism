@@ -12,7 +12,6 @@ function DetailView() {
             <Head>
                 <title>Artruism at UC Davis | Art Gallery</title>
             </Head>
-            <Nav />
             <div className={styles.container2}>
                 <div className={styles.container3}>
                     <Artwork />
