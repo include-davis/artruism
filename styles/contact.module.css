@@ -1,0 +1,314 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.containerinfo{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+
+    position: absolute;
+    width: 896px;
+    height: 448px;
+    top: 147px;
+
+    background: #D4B7DF;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.containerform{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    position: absolute;
+    width: 458px;
+    height: 448px;
+    left: 50%;
+    top: 147px;
+
+    background: #FCF7F8;
+    border: 1px solid #232020;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Text */
+/* Questions? Reach Out! */
+.title{
+    position: static;
+    width: 402px;
+    height: 52px;
+    left: 166px;
+    top: 0px;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 52px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #232020;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+.subtitle{
+    position: static;
+    width: 734px;
+    height: 23px;
+    left: 0px;
+    top: 60px;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #232020;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+/* Contact Information */
+.heading{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #232020;
+}
+
+/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
+.subheading{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    
+    color: #232020;
+}
+
+/* Our Location; Connect With Us */
+.heading2{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #232020;
+}
+
+/* Contact Information Containers */
+.containerdescr{
+    position: static;
+    width: 237px;
+    height: 169px;
+    left: 0px;
+    top: 23px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.containerlocation{
+    position: static;
+    width: 237px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.containerconnect{
+    position: static;
+    width: 237px;
+    height: 79px;
+    left: 40px;
+    top: 0px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.containerconnect2{
+    margin: 0px 18px;
+}
+
+.containerconnectsocials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+/* Form Containers */
+.containerfirstname{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 44px;
+    top: 30px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    margin: 4px 0px;
+}
+
+.containerlastname{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 264px;
+    top: 30px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.containeremail{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 44px;
+    top: 92px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.containerphone{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 264px;
+    top: 92px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    margin: 4px 0px;
+}
+
+.containerreason{
+    position: absolute;
+    width: 370px;
+    height: 50px;
+    left: 44px;
+    top: 154px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    margin: 4px 0px;
+
+}
+
+.containernotes{
+    position: absolute;
+    width: 370px;
+    height: 50px;
+    left: 44px;
+    top: 216px;
+
+    display: flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    margin: 4px 0px;
+
+}
+
+.formlabel{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.formhalf{
+    position: absolute;
+    height: 35px;
+
+    border: none;
+    border-bottom: 1px solid #A16373;
+    background: none;
+    outline: none;
+}
+
+.formfull{
+    position: absolute;
+    width: 370px;
+    height: 35px;
+
+    border: none;
+    border-bottom: 1px solid #A16373;
+    background: none;
+    outline: none;
+}
+
