@@ -1,3 +1,5 @@
+//Unless noted, the commented-out code is part of the project, and hsn't been debugged yet.
+
 import styles from "../styles/contact.module.css"
 // import formstyles from "../styles/contact/form.module.css"
 import Head from 'next/head'
@@ -17,7 +19,7 @@ function Contact() {
         <style>@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');</style>
         
         <Head>
-            <title>Artruism at UC Davis | Contacy Us</title>
+            <title>Artruism at UC Davis | Contact Us</title>
         </Head>
 
         <div className={styles.title}>
@@ -41,7 +43,7 @@ function Contact() {
                 <div className={styles.containerconnect2}>
                     <div className={styles.subheading}> 
                         (123) 456-7890 
-                        artruismatdavis@gmail.com 
+                        artruismatdavis@gmail.com // is this the email we will be using?
                     </div>
                 </div>
             </div>
@@ -55,6 +57,8 @@ function Contact() {
                 <div className={styles.formlabel}> First name </div>
                     <input 
                         type="text"
+                     // < label htmlFor='firstName'>First Name</label>
+                     // < input type='text' name='firstName' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
@@ -63,6 +67,8 @@ function Contact() {
                 <div className={styles.formlabel}> Last name </div>
                     <input 
                         type="text"
+                     // < label htmlFor='lastName'>Last Name</label>
+                     // < input type='text' name='lastName' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
@@ -71,6 +77,8 @@ function Contact() {
                 <div className={styles.formlabel}> UC Davis email </div>
                     <input 
                         type="text"
+                       // < label htmlFor='email'>UC Davis Email</label>
+                       // < input type='text' name='email' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
@@ -79,6 +87,8 @@ function Contact() {
                 <div className={styles.formlabel}> Phone number </div>
                     <input 
                         type="text"
+                   //  < label htmlFor='number'>Phone Number</label>
+                   // < input type='text' name='number' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
@@ -87,6 +97,8 @@ function Contact() {
                 <div className={styles.formlabel}> Reason for contact </div>
                     <input 
                         type="text"
+                     // < label htmlFor='reason'>Reason for contact</label>
+                    // < input type='text' name='reason' className={styles.inputField} />
                         className={styles.formfull}
                     />
             </div>
@@ -95,17 +107,18 @@ function Contact() {
                 <div className={styles.formlabel}> Additional notes </div>
                     <input 
                         type="text"
+                     // < label htmlFor='notes'>Additional Notes</label>
+                     // < input type='text' name='notes' className={styles.inputField} />
                         className={styles.formfull}
                     />
             </div>
 
+        // input type='submit'/>
         </div>
       </div>
-        /* <Head>
-          <title>"Questions? Reach Out!"</title>
-        </Head>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
-     
+
+        /* Previous bad frontend:
+          <Head>
           < form className={styles.main} >
               
           < formGroup className={styles.inputGroup} >
