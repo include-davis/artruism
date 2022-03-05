@@ -1,13 +1,15 @@
-/*
 export default function (req, res) {
     require('dotenv').config()
 
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
       port: 465,     
-      host: "PLACEHOLDER.gmail.com",
+      host: "smtp.gmail.com",
          auth: {
-              user: 'demo email',
+              user: 'demo@demo.gemail',
+             // To use password: create .env file. In the file, write (without quotes)
+             // "password=whateverthepasswordis"
+             // include the .env in your gitignore
               pass: process.env.password,
            },
       secure: true,
@@ -31,4 +33,3 @@ export default function (req, res) {
     console.log(req.body)
     res.send('success')
   }
-*/
