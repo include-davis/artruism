@@ -13,6 +13,41 @@ import Head from 'next/head'
 // const [notes, setNotes] = useState('')
 // const [submitted, setSubmitted] = useState(false)
 
+/*
+const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Sending')
+
+    let data = {
+        firstName,
+        lastName,
+        email,
+        number,
+        reason,
+        notes
+    }
+*/
+
+//   fetch('/api/contact', {
+//      method: 'POST',
+//      headers: {
+//        'Accept': 'application/json, text/plain, */*',
+/*        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+        console.log('Response received')
+        if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true) 
+            setName('')
+            setEmail('')
+            setMessage('')
+        }
+    })
+  }
+*/
+
 function Contact() {
     return (
       <div className={styles.container}>
@@ -52,58 +87,58 @@ function Contact() {
             </div>
         </div>
 
-        <div className={styles.containerform}>
-            <div className={styles.containerfirstname}>
+        <div className={styles.containerform}> //should this be a form instead of a div?
+            <div className={styles.containerfirstname}> //formGroup?
                 <div className={styles.formlabel}> First name </div>
                     <input 
                         type="text"
                      // < label htmlFor='firstName'>First Name</label>
-                     // < input type='text' name='firstName' className={styles.inputField} />
+                     // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
 
-            <div className={styles.containerlastname}>
+            <div className={styles.containerlastname}> // should this be a formGroup?
                 <div className={styles.formlabel}> Last name </div>
                     <input 
                         type="text"
                      // < label htmlFor='lastName'>Last Name</label>
-                     // < input type='text' name='lastName' className={styles.inputField} />
+                     // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
 
-            <div className={styles.containeremail}>
+            <div className={styles.containeremail}> //formGroup?
                 <div className={styles.formlabel}> UC Davis email </div>
                     <input 
                         type="text"
                        // < label htmlFor='email'>UC Davis Email</label>
-                       // < input type='text' name='email' className={styles.inputField} />
+                       // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
 
-            <div className={styles.containerphone}>
+            <div className={styles.containerphone}> //formGroup?
                 <div className={styles.formlabel}> Phone number </div>
                     <input 
                         type="text"
                    //  < label htmlFor='number'>Phone Number</label>
-                   // < input type='text' name='number' className={styles.inputField} />
+                   // < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
                         className={styles.formhalf}
                     />
             </div>
 
-            <div className={styles.containerreason}>
+            <div className={styles.containerreason}> //formGroup?
                 <div className={styles.formlabel}> Reason for contact </div>
                     <input 
                         type="text"
                      // < label htmlFor='reason'>Reason for contact</label>
-                    // < input type='text' name='reason' className={styles.inputField} />
+                    // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
                         className={styles.formfull}
                     />
             </div>
 
-            <div className={styles.containernotes}>
+            <div className={styles.containernotes}> //formGroup?
                 <div className={styles.formlabel}> Additional notes </div>
                     <input 
                         type="text"
@@ -113,47 +148,9 @@ function Contact() {
                     />
             </div>
 
-        // input type='submit'/>
+        // input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
         </div>
       </div>
-
-        /* Previous bad frontend:
-          <Head>
-          < form className={styles.main} >
-              
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='firstName'>First Name</label>
-              < input type='text' name='firstName' className={styles.inputField} />
-          </formGroup>
-
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='lastName'>Last Name</label>
-              < input type='text' name='lastName' className={styles.inputField} />
-          </formGroup>
-
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='email'>UC Davis Email</label>
-              < input type='text' name='email' className={styles.inputField} />
-          </formGroup>
-
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='number'>Phone Number</label>
-              < input type='text' name='number' className={styles.inputField} />
-          </formGroup>
-
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='reason'>Reason for contact</label>
-              < input type='text' name='reason' className={styles.inputField} />
-          </formGroup>
-
-          < formGroup className={styles.inputGroup} >
-              < label htmlFor='notes'>Additional Notes</label>
-              < input type='text' name='notes' className={styles.inputField} />
-          </formGroup>
-
-          < input type='submit'/>
-          </form >  */
-        
     )
 }
 
