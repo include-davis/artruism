@@ -155,6 +155,18 @@ function Contact() {
                     />
             </div>
 
+            <input
+                value="Clear Form"
+                type="submit"
+                className={styles.buttonclear}
+            />
+
+            <input
+                value="Submit Form"
+                type="submit"
+                className={styles.buttonsubmit}
+            />
+
         {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
         </div>
       </div>
