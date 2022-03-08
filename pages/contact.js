@@ -1,4 +1,4 @@
-//Unless noted, the commented-out code is part of the project, and hsn't been debugged yet.
+//Unless noted, the commented-out code is part of the project, and hasn't been debugged yet.
 
 import styles from "../styles/contact.module.css"
 // import formstyles from "../styles/contact/form.module.css"
@@ -78,7 +78,7 @@ function Contact() {
                 <div className={styles.containerconnect2}>
                     <div className={styles.subheading}> 
                         (123) 456-7890 
-                        artruismatdavis@gmail.com // is this the email we will be using?
+                        artruismatdavis@gmail.com 
                     </div>
                 </div>
             </div>
@@ -87,8 +87,10 @@ function Contact() {
             </div>
         </div>
 
-        <div className={styles.containerform}> //should this be a form instead of a div?
-            <div className={styles.containerfirstname}> //formGroup?
+        <div className={styles.containerform}> 
+            {/* should this be a form instead of a div? */}
+            <div className={styles.containerfirstname}> 
+            {/* //formGroup? */}
                 <div className={styles.formlabel}> First name </div>
                     <input 
                         type="text"
@@ -98,7 +100,8 @@ function Contact() {
                     />
             </div>
 
-            <div className={styles.containerlastname}> // should this be a formGroup?
+            <div className={styles.containerlastname}> 
+            {/* // should this be a formGroup? */}
                 <div className={styles.formlabel}> Last name </div>
                     <input 
                         type="text"
@@ -108,7 +111,8 @@ function Contact() {
                     />
             </div>
 
-            <div className={styles.containeremail}> //formGroup?
+            <div className={styles.containeremail}> 
+            {/* //formGroup? */}
                 <div className={styles.formlabel}> UC Davis email </div>
                     <input 
                         type="text"
@@ -118,7 +122,8 @@ function Contact() {
                     />
             </div>
 
-            <div className={styles.containerphone}> //formGroup?
+            <div className={styles.containerphone}> 
+            {/* //formGroup? */}
                 <div className={styles.formlabel}> Phone number </div>
                     <input 
                         type="text"
@@ -128,7 +133,8 @@ function Contact() {
                     />
             </div>
 
-            <div className={styles.containerreason}> //formGroup?
+            <div className={styles.containerreason}> 
+            {/* //formGroup? */}
                 <div className={styles.formlabel}> Reason for contact </div>
                     <input 
                         type="text"
@@ -138,7 +144,8 @@ function Contact() {
                     />
             </div>
 
-            <div className={styles.containernotes}> //formGroup?
+            <div className={styles.containernotes}> 
+            {/* //formGroup? */}
                 <div className={styles.formlabel}> Additional notes </div>
                     <input 
                         type="text"
@@ -148,7 +155,7 @@ function Contact() {
                     />
             </div>
 
-        // input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
+        {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
         </div>
       </div>
     )
