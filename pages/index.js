@@ -8,6 +8,7 @@ import Contact from './contact'
 
 import styles from '../styles/Home.module.css'
 import Nav from '../components/nav'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Calendar />
         <Join />
         <Contact />
+        <Footer />
       </div>
     </div>
   )

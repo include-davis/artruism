@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;700&display=swap');
+
+.footer {
+    width: 100%;
+    height: 112px;
+    background: #A16373;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 128% */
+
+
+    letter-spacing: -0.04em;
+
+    /*color: #FCF7F8;*/
+    color: black;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FCF7F8;
+}
+
+.logo {
+    display: flex;
+    /* align-items: center; */
+    font-family: Catamaran;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    /* top: 15.78px; */
+    bottom: 9px;
+    color: #FCF7F8;
+
+}
+
+.logoText {
+    align-self: left;
+    flex-direction: column;
+    /* Spacing */
+    font-family: Catamaran;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.logoSubText {
+    /* Spacing */
+    margin-top: 9px;
+
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+}
+.logoSubHeadingText{
+    align-self: left;
+    flex-direction: column;
+    /* Spacing */
+    font-family: Catamaran;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+
+.logoIcon {
+    width: 56px;
+    height: 54.55px;
+    margin: 0px 20px 0px 72px;
+}
+
+.navMenu {
+    display:flex;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.navMenu li {
+    padding: 27px;
+
+}
+
+.twitterLogo {
+    width: 112px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit {
+    display: inline;
+    flex-direction: column;
+    margin-right: 72px;
+
+    font-family: Catamaran;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+}
+
+.creditBold {
+    font-weight: bold;
+}

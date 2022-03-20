@@ -7,7 +7,7 @@ function Nav() {
             <div className={styles.container}>
                 <div className = {styles.logo}>
                     <div className = {styles.logoIcon}>
-                    <Image src="/../public/favicon.ico" alt="icon" width={56} height={54.55} objectFit='cover'/>
+                    <Image src="/../public/artruism_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
                     </div>
                     Artruism at UC Davis
                 </div>
