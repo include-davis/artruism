@@ -19,11 +19,11 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Nav />
-        <About />
-        <Gallery />
-        <Calendar />
-        <Join />
-        <Contact />
+        <div id="about"><About /></div>
+        <div id="gallery"><Gallery /></div>
+        <div id="calendar"><Calendar /></div>
+        <div id="join"><Join /></div>
+        <div id='contact'><Contact /></div>
         <Footer />
       </div>
     </div>

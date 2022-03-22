@@ -1,5 +1,6 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -23,12 +24,12 @@ function Footer() {
                 </div>
 
                 <ul className={styles.navMenu}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Gallery</li>
-                    <li>Events</li>
-                    <li>Contact Us</li>
+                    <li><Link href="/"><a>Home</a></Link></li>
+                    <li><Link href="#about"><a>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
+                    <li><Link href="#contact"><a>Contact</a></Link></li>
                 </ul>
+
 
                 <div className={styles.twitterLogo}>
                     <Image src="/../public/facebook_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>

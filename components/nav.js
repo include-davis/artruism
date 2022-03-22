@@ -1,5 +1,7 @@
 import styles from '../styles/nav.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import Contact from '../pages/contact'
 
 function Nav() {
     return (
@@ -13,22 +15,33 @@ function Nav() {
                 </div>
 
                 <ul className={styles.navMenu}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Gallery</li>
-                    <li>Events</li>
-                    <li>Contact Us</li>
+                    <li><Link href="/"><a>Home</a></Link></li>
+                    <li><Link href="#about"><a>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
+                    <li><Link href="#calendar"><a>Events</a></Link></li>
+                    <li><Link href="#contact"><a>Contact</a></Link></li>
                 </ul>
             </div>
             <div className={styles.side_navbar}>
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Gallery</li>
-                    <li>Events</li>
-                    <li>Contact Us</li>
+                    <li><Link href="/"><a>Home</a></Link></li>
+                    <li><Link href="#about"><a>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
+                    <li><Link href="#calendar"><a>Events</a></Link></li>
+                    <li><Link href="#join"><a>Join Us</a></Link></li>
+                    <li><Link href="#contact"><a>Contact</a></Link></li>
                 </ul>
             </div>
+
+            <div className={styles.buttonContainer}>
+                <div className={styles.up_arrow}>
+                    <Link href="#top"><Image src="/../public/up_arrow.png" alt="icon" width='50%' height='50%' objectFit='contain'/></Link>
+                </div>
+                <div>
+                    <Link href="#top">Back to top</Link>
+                </div>
+            </div>
+
         </div>
 
     )
