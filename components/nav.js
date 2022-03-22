@@ -38,7 +38,7 @@ function Nav() {
                     <Link href="#top"><Image src="/../public/up_arrow.png" alt="icon" width='50%' height='50%' objectFit='contain'/></Link>
                 </div>
                 <div>
-                    <Link href="#top">Back to top</Link>
+                    <Link href="#top">Back to Top</Link>
                 </div>
             </div>
 
