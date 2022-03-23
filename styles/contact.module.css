@@ -9,34 +9,44 @@
     font-weight: normal;
 }
 
+.containerheading{
+    text-align: center;
+    order: 1; 
+}
+
+.container2{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
 .containerinfo{
+    order: 1;
     display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
 
-    position: absolute;
-    width: 896px;
-    height: 448px;
-    top: 147px;
-
     background: #D4B7DF;
     border-radius: 10px 0px 0px 10px;
 }
 
 .containerform{
+    order: 2;
     display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-
-    position: absolute;
-    width: 458px;
-    height: 448px;
     left: 50%;
-    top: 147px;
 
     background: #FCF7F8;
     border: 1px solid #232020;
@@ -47,54 +57,27 @@
 /* Text */
 /* Questions? Reach Out! */
 .title{
-    position: static;
-    width: 402px;
-    height: 52px;
-    left: 166px;
-    top: 0px;
-
     font-family: Catamaran;
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 52px;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.04em;
-
     color: #232020;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 8px 0px;
+    margin-top: 20%;
 }
 
 /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
 .subtitle{
-    position: static;
-    width: 734px;
-    height: 23px;
-    left: 0px;
-    top: 60px;
-
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-
-    display: flex;
-    align-items: center;
     letter-spacing: -0.04em;
 
     color: #232020;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 8px 0px;
+    margin-top: 1%;
 }
 
 /* Contact Information */
@@ -189,7 +172,6 @@
 
 /* Form Containers */
 .containerfirstname{
-    position: absolute;
     width: 180px;
     height: 50px;
     left: 44px;
@@ -203,7 +185,6 @@
 }
 
 .containerlastname{
-    position: absolute;
     width: 180px;
     height: 50px;
     left: 264px;
@@ -220,7 +201,6 @@
 }
 
 .containeremail{
-    position: absolute;
     width: 180px;
     height: 50px;
     left: 44px;
@@ -237,7 +217,6 @@
 }
 
 .containerphone{
-    position: absolute;
     width: 180px;
     height: 50px;
     left: 264px;
@@ -251,7 +230,6 @@
 }
 
 .containerreason{
-    position: absolute;
     width: 370px;
     height: 50px;
     left: 44px;
@@ -262,11 +240,9 @@
     letter-spacing: -0.04em;
 
     margin: 4px 0px;
-
 }
 
 .containernotes{
-    position: absolute;
     width: 370px;
     height: 50px;
     left: 44px;
@@ -275,9 +251,15 @@
     display: flex;
     align-items: left;
     letter-spacing: -0.04em;
-
     margin: 4px 0px;
+}
 
+.containerbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 0px;
 }
 
 .formlabel{
@@ -316,13 +298,13 @@
 
 /*Clear Form*/
 .buttonclear{
+    order: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 40px;
 
-    position: absolute;
     width: 130px;
     height: 32px;
     left: 44px;
@@ -343,14 +325,14 @@
 
 /*Submit Form*/
 .buttonsubmit{
+    order: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 40px;
 
-    position: absolute;
-    width: 143px;
+    width: 130px;
     height: 32px;
     right: 44px;
     left: 270px;

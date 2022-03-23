@@ -57,117 +57,123 @@ function Contact() {
             <title>Artruism at UC Davis | Contact Us</title>
         </Head>
 
-        <div className={styles.title}>
-            Questions? Reach Out!
-        </div>
-        <div className={styles.subtitle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div className={styles.containerheading}>
+            <div className={styles.title}>
+                Questions? Reach Out!
+            </div>
+            <div className={styles.subtitle}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
         </div>
 
-        <div className={styles.containerinfo}>
-            <div className={styles.containerdescr}> 
-                <div className={styles.heading}> Contact Information </div>
-                <div className={styles.subheading}> Reach out to us via these contact methods. Email us for any questions, concerns, and more. </div>
-            </div>
-            <div className={styles.containerlocation}>
-                <div className={styles.heading2}> Our Location </div>
-                <div className={styles.subheading}> 1 Shields Ave, Davis, CA 95616 </div>
-            </div>
-            <div className={styles.containerconnect}>
-                <div className={styles.heading2}> Connect With Us </div>
-                <div className={styles.containerconnect2}>
-                    <div className={styles.subheading}> 
-                        (123) 456-7890 
-                        artruismatdavis@gmail.com 
+        <div className={styles.container2}>
+            <div className={styles.containerinfo}>
+                <div className={styles.containerdescr}> 
+                    <div className={styles.heading}> Contact Information </div>
+                    <div className={styles.subheading}> Reach out to us via these contact methods. Email us for any questions, concerns, and more. </div>
+                </div>
+                <div className={styles.containerlocation}>
+                    <div className={styles.heading2}> Our Location </div>
+                    <div className={styles.subheading}> 1 Shields Ave, Davis, CA 95616 </div>
+                </div>
+                <div className={styles.containerconnect}>
+                    <div className={styles.heading2}> Connect With Us </div>
+                    <div className={styles.containerconnect2}>
+                        <div className={styles.subheading}> 
+                            (123) 456-7890 
+                            artruismatdavis@gmail.com 
+                        </div>
                     </div>
                 </div>
+                <div className={styles.containerconnectsocials}>
+                        
+                </div>
             </div>
-            <div className={styles.containerconnectsocials}>
-                    
-            </div>
-        </div>
 
-        <div className={styles.containerform}> 
-            {/* should this be a form instead of a div? */}
-            <div className={styles.containerfirstname}> 
-            {/* //formGroup? */}
-                <div className={styles.formlabel}> First name </div>
-                    <input 
-                        type="text"
-                     // < label htmlFor='firstName'>First Name</label>
-                     // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
-                        className={styles.formhalf}
+            <div className={styles.containerform}> 
+                {/* should this be a form instead of a div? */}
+                <div className={styles.containerfirstname}> 
+                {/* //formGroup? */}
+                    <div className={styles.formlabel}> First name </div>
+                        <input 
+                            type="text"
+                        // < label htmlFor='firstName'>First Name</label>
+                        // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
+                            className={styles.formhalf}
+                        />
+                </div>
+
+                <div className={styles.containerlastname}> 
+                {/* // should this be a formGroup? */}
+                    <div className={styles.formlabel}> Last name </div>
+                        <input 
+                            type="text"
+                        // < label htmlFor='lastName'>Last Name</label>
+                        // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
+                            className={styles.formhalf}
+                        />
+                </div>
+
+                <div className={styles.containeremail}> 
+                {/* //formGroup? */}
+                    <div className={styles.formlabel}> UC Davis email </div>
+                        <input 
+                            type="text"
+                        // < label htmlFor='email'>UC Davis Email</label>
+                        // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+                            className={styles.formhalf}
+                        />
+                </div>
+
+                <div className={styles.containerphone}> 
+                {/* //formGroup? */}
+                    <div className={styles.formlabel}> Phone number </div>
+                        <input 
+                            type="text"
+                    //  < label htmlFor='number'>Phone Number</label>
+                    // < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
+                            className={styles.formhalf}
+                        />
+                </div>
+
+                <div className={styles.containerreason}> 
+                {/* //formGroup? */}
+                    <div className={styles.formlabel}> Reason for contact </div>
+                        <input 
+                            type="text"
+                        // < label htmlFor='reason'>Reason for contact</label>
+                        // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
+                            className={styles.formfull}
+                        />
+                </div>
+
+                <div className={styles.containernotes}> 
+                {/* //formGroup? */}
+                    <div className={styles.formlabel}> Additional notes </div>
+                        <input 
+                            type="text"
+                        // < label htmlFor='notes'>Additional Notes</label>
+                        // < input type='text' name='notes' className={styles.inputField} />
+                            className={styles.formfull}
+                        />
+                </div>
+
+                <div className={styles.containerbuttons}> 
+                    <input
+                        value="Clear Form"
+                        type="submit"
+                        className={styles.buttonclear}
                     />
-            </div>
 
-            <div className={styles.containerlastname}> 
-            {/* // should this be a formGroup? */}
-                <div className={styles.formlabel}> Last name </div>
-                    <input 
-                        type="text"
-                     // < label htmlFor='lastName'>Last Name</label>
-                     // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
-                        className={styles.formhalf}
+                    <input
+                        value="Submit Form"
+                        type="submit"
+                        className={styles.buttonsubmit}
                     />
+                </div>
+
+            {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
             </div>
-
-            <div className={styles.containeremail}> 
-            {/* //formGroup? */}
-                <div className={styles.formlabel}> UC Davis email </div>
-                    <input 
-                        type="text"
-                       // < label htmlFor='email'>UC Davis Email</label>
-                       // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
-                        className={styles.formhalf}
-                    />
-            </div>
-
-            <div className={styles.containerphone}> 
-            {/* //formGroup? */}
-                <div className={styles.formlabel}> Phone number </div>
-                    <input 
-                        type="text"
-                   //  < label htmlFor='number'>Phone Number</label>
-                   // < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
-                        className={styles.formhalf}
-                    />
-            </div>
-
-            <div className={styles.containerreason}> 
-            {/* //formGroup? */}
-                <div className={styles.formlabel}> Reason for contact </div>
-                    <input 
-                        type="text"
-                     // < label htmlFor='reason'>Reason for contact</label>
-                    // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
-                        className={styles.formfull}
-                    />
-            </div>
-
-            <div className={styles.containernotes}> 
-            {/* //formGroup? */}
-                <div className={styles.formlabel}> Additional notes </div>
-                    <input 
-                        type="text"
-                     // < label htmlFor='notes'>Additional Notes</label>
-                     // < input type='text' name='notes' className={styles.inputField} />
-                        className={styles.formfull}
-                    />
-            </div>
-
-            <input
-                value="Clear Form"
-                type="submit"
-                className={styles.buttonclear}
-            />
-
-            <input
-                value="Submit Form"
-                type="submit"
-                className={styles.buttonsubmit}
-            />
-
-        {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
         </div>
       </div>
     )
