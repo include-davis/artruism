@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+.join title {
+    position: static;
+    width: 660px;
+    height: 52px;
+    left: 142.5px;
+    top: 0px;
+    
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 52px;
+    /* identical to box height, or 116% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #000000;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 40px 0px;
+
+    /*Added*/
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap
+}
+
+.joinimg img {
+    object-fit: cover;
+    position: static;
+    width: 945px;
+    height: 390.17px;
+    left: 0px;
+    top: 92px;
+    
+    background: url(../public/joinus.png);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 40px 0px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.description p {
+    position: static;
+    width: 943px;
+    height: 92px;
+    left: 1px;
+    top: 522.17px;
+    
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 40px 0px;
+
+    /*Added*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button_container button:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    
+    position: static;
+    width: 136px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    
+    background: #A16373;
+    border-radius: 14px;
+    border: #000000;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+
+}
+.button_container button:first-child p {
+    position: static;
+    width: 96px;
+    height: 23px;
+    left: 20px;
+    top: 10px;
+    
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.5px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #FCF7F8;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.button_container button:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    
+    position: static;
+    width: 148px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    
+    /*edited & added*/
+    background: none;
+    border-radius: 14px;
+    border: 1px solid; 
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+.button_container button:nth-child(2) p {
+    position: static;
+    width: 108px;
+    height: 23px;
+    left: 20px;
+    top: 10px;
+    
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.5px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #232020;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.button_container button:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    
+    position: static;
+    width: 186px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    
+    /*edited & added*/
+    background: none;
+    border-radius: 14px;
+    border: 1px solid; 
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+.button_container button:nth-child(3) p {
+    position: static;
+    width: 146px;
+    height: 23px;
+    left: 20px;
+    top: 10px;
+    
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.5px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #232020;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    white-space: nowrap;
+    justify-content: center;
+}
