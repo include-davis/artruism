@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+.about{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #232020;
+    margin-top: 5%;
+}
+
+.aboutsubtitle{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: normal;
+    color: #232020;
+    text-align: center;
+}
