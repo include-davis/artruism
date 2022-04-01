@@ -1,7 +1,7 @@
 //Unless noted, the commented-out code is part of the project, and hasn't been debugged yet.
 
 import styles from "../styles/contact.module.css"
-// import formstyles from "../styles/contact/form.module.css"
+import Image from 'next/image'
 import Head from 'next/head'
 // import { useState } from 'react'
 
@@ -66,7 +66,7 @@ function Contact() {
             </div>
         </div>
 
-        <div className={styles.container2}>
+        <div className={styles.containercontent}>
             <div className={styles.containerinfo}>
                 <div className={styles.containerdescr}> 
                     <div className={styles.heading}> Contact Information </div>
@@ -78,22 +78,21 @@ function Contact() {
                 </div>
                 <div className={styles.containerconnect}>
                     <div className={styles.heading2}> Connect With Us </div>
-                    <div className={styles.containerconnect2}>
-                        <div className={styles.subheading}> 
-                            (123) 456-7890 
-                            artruismatdavis@gmail.com 
-                        </div>
-                    </div>
+                    <Image src="/../public/icons/phone.png" className={styles.icon} alt="phone icon" width={'18%'} height={'18%'} />
+                    <div className={styles.subheading}> (123) 456-7890 </div>
+                    <br></br>
+                    <Image src="/../public/icons/mail.png" className={styles.icon} alt="mail icon" width={'20%'} height={'22%'}/>
+                    <div className={styles.subheading}> artruismatdavis@gmail.com </div>
                 </div>
                 <div className={styles.containerconnectsocials}>
-                        
+                    <Image src="/../public/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'} />
+                    <Image src="/../public/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
+                    <Image src="/../public/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
                 </div>
             </div>
 
             <div className={styles.containerform}> 
-                {/* should this be a form instead of a div? */}
                 <div className={styles.containerfirstname}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> First name </div>
                         <input 
                             type="text"
@@ -104,7 +103,6 @@ function Contact() {
                 </div>
 
                 <div className={styles.containerlastname}> 
-                {/* // should this be a formGroup? */}
                     <div className={styles.formlabel}> Last name </div>
                         <input 
                             type="text"
@@ -113,9 +111,8 @@ function Contact() {
                             className={styles.formhalf}
                         />
                 </div>
-
+                <br></br>
                 <div className={styles.containeremail}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> UC Davis email </div>
                         <input 
                             type="text"
@@ -126,7 +123,6 @@ function Contact() {
                 </div>
 
                 <div className={styles.containerphone}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Phone number </div>
                         <input 
                             type="text"
@@ -137,7 +133,6 @@ function Contact() {
                 </div>
 
                 <div className={styles.containerreason}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Reason for contact </div>
                         <input 
                             type="text"
@@ -148,7 +143,6 @@ function Contact() {
                 </div>
 
                 <div className={styles.containernotes}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Additional notes </div>
                         <input 
                             type="text"

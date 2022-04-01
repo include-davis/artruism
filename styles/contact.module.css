@@ -14,7 +14,7 @@
     order: 1; 
 }
 
-.container2{
+.containercontent{
     order: 2;
     display: flex;
     flex-direction: row;
@@ -33,25 +33,26 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    padding: 3em;
+    padding-right: 13em;
 
     background: #D4B7DF;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0.625em;
 }
 
 .containerform{
     order: 2;
-    display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 2em;
+    padding-left: 3em;
     left: 50%;
 
     background: #FCF7F8;
-    border: 1px solid #232020;
+    border: 0.0625em solid #232020;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 0.625em;
 }
 
 /* Text */
@@ -60,7 +61,7 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.75em;
     line-height: 52px;
 
     color: #232020;
@@ -72,8 +73,8 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1em;
+    line-height: 1.5em;
     letter-spacing: -0.04em;
 
     color: #232020;
@@ -85,8 +86,8 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 1.25em;
 
     color: #232020;
 }
@@ -96,10 +97,11 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    
+    font-size: 1em;
+    line-height: 1.5em;
     color: #232020;
+
+    display: inline;
 }
 
 /* Our Location; Connect With Us */
@@ -107,151 +109,148 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1em;
+    line-height: 1.5em;
 
     color: #232020;
+}
+
+.formlabel{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
+
 }
 
 /* Contact Information Containers */
 .containerdescr{
     position: static;
-    width: 237px;
-    height: 169px;
-    left: 0px;
-    top: 23px;
+    width: 14.75em;
+    height: 10.5em;
+    left: 0em;
+    top: 1.5em;
 
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em 0em;
 }
 
 .containerlocation{
     position: static;
-    width: 237px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
+    width: 14.75em;
+    height: 4.25em;
+    left: 0em;
+    top: 0em;
 
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em 0em;
 }
 
 .containerconnect{
     position: static;
-    width: 237px;
-    height: 79px;
-    left: 40px;
-    top: 0px;
+    width: 14.75em;
+    height: 5em;
+    left: 1.25em;
+    top: 0em;
 
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em 0em;
 }
 
-.containerconnect2{
-    margin: 0px 18px;
+.containerconnect .subheading{ 
+    padding-left: 5%;
 }
 
 .containerconnectsocials{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding: 28px;
+    padding-bottom: 0em;
 
+    width: 70%;
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em -28px;
 }
 
 /* Form Containers */
 .containerfirstname{
-    width: 180px;
-    height: 50px;
-    left: 44px;
-    top: 30px;
+    width: 11.25em;
+    height: 3.125em;
 
-    display: flex;
+    display: inline-flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0px;
+    margin: 4px 0em;
 }
 
 .containerlastname{
-    width: 180px;
-    height: 50px;
-    left: 264px;
-    top: 30px;
+    width: 11.25em;
+    height: 3.125em;
 
-    display: flex;
+    display: inline-flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 4px 0px;
+    padding-left: 0.5em;
+    margin: 4px 0em;
 }
 
 .containeremail{
-    width: 180px;
-    height: 50px;
-    left: 44px;
-    top: 92px;
+    width: 11.25em;
+    height: 3.125em;
 
-    display: flex;
+    display: inline-flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 4px 0px;
+    margin: 4px 0em;
 }
 
 .containerphone{
-    width: 180px;
-    height: 50px;
-    left: 264px;
-    top: 92px;
+    width: 11.25em;
+    height: 3.125em;
 
-    display: flex;
+    display: inline-flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0px;
+    padding-left: 0.5em;
+    margin: 4px 0em;
 }
 
 .containerreason{
-    width: 370px;
-    height: 50px;
-    left: 44px;
-    top: 154px;
+    width: 23.125em;
+    height: 3.125em;
 
     display: flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0px;
+    margin: 4px 0em;
 }
 
 .containernotes{
-    width: 370px;
-    height: 50px;
-    left: 44px;
-    top: 216px;
+    width: 23.125em;
+    height: 3.125em;
 
     display: flex;
     align-items: left;
     letter-spacing: -0.04em;
-    margin: 4px 0px;
+    margin: 4px 0em;
 }
 
 .containerbuttons{
@@ -259,23 +258,14 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    padding: 20px 0px;
-}
-
-.formlabel{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -0.04em;
-    color: rgba(0, 0, 0, 0.5);
-
+    padding-top: 30%;
+    padding-bottom: 20px;
 }
 
 .formhalf{
     position: absolute;
     height: 35px;
+    display: inline-flex;
 
     border: none;
     border-bottom: 1px solid #A16373;
@@ -285,7 +275,7 @@
 
 .formfull{
     position: absolute;
-    width: 370px;
+    width: 350px;
     height: 35px;
 
     border: none;
@@ -303,11 +293,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0.3125em 1.25em;
 
-    width: 130px;
-    height: 32px;
-    left: 44px;
+    width: 11em;
+    height: 2.75em;
+    left: 2.75em;
     top: 386px;
 
     background: #ABABAB;
@@ -316,8 +306,8 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.75em;
+    line-height: 0.75em;
 
     color: #000000;
 }
@@ -330,11 +320,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0.3125em 1.25em;
 
-    width: 130px;
-    height: 32px;
-    right: 44px;
+    width: 11em;
+    height: 2.75em;
+    right: 2.75em;
     left: 270px;
     top: 386px;
 
@@ -344,9 +334,16 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.75em;
+    line-height: 0.75em;
     letter-spacing: -0.04em;
 
     color: #FCF7F8;
 }
+
+ /*Icons*/
+.icon{
+   width: 1.125em;
+   height: 1.125em;
+}
+
