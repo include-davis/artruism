@@ -12,6 +12,7 @@
 .containerheading{
     text-align: center;
     order: 1; 
+    width: 60%;
 }
 
 .containercontent{
@@ -24,7 +25,7 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .containerinfo{
@@ -34,7 +35,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 3em;
-    padding-right: 13em;
+    padding-right: 10.35em;
 
     background: #D4B7DF;
     border-radius: 0.625em;
@@ -62,10 +63,10 @@
     font-style: normal;
     font-weight: 600;
     font-size: 2.75em;
-    line-height: 52px;
+    line-height: 1em;
 
     color: #232020;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
@@ -120,10 +121,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 0.75em;
-    line-height: 14px;
+    line-height: 0.875em;
     letter-spacing: -0.04em;
     color: rgba(0, 0, 0, 0.5);
-
 }
 
 /* Contact Information Containers */
@@ -131,8 +131,6 @@
     position: static;
     width: 14.75em;
     height: 10.5em;
-    left: 0em;
-    top: 1.5em;
 
     flex: none;
     order: 0;
@@ -144,8 +142,6 @@
     position: static;
     width: 14.75em;
     height: 4.25em;
-    left: 0em;
-    top: 0em;
 
     flex: none;
     order: 1;
@@ -157,8 +153,6 @@
     position: static;
     width: 14.75em;
     height: 5em;
-    left: 1.25em;
-    top: 0em;
 
     flex: none;
     order: 2;
@@ -175,14 +169,14 @@
     flex-direction: row;
     justify-content:space-between;
     align-items:flex-start;
-    padding: 28px;
+    padding: 1.75em;
     padding-bottom: 0em;
 
     width: 70%;
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 0em -28px;
+    margin: 0em -1.75em;
 }
 
 /* Form Containers */
@@ -194,7 +188,7 @@
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containerlastname{
@@ -206,7 +200,7 @@
     letter-spacing: -0.04em;
 
     padding-left: 0.5em;
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containeremail{
@@ -217,7 +211,7 @@
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containerphone{
@@ -229,7 +223,7 @@
     letter-spacing: -0.04em;
 
     padding-left: 0.5em;
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containerreason{
@@ -240,7 +234,7 @@
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containernotes{
@@ -250,7 +244,7 @@
     display: flex;
     align-items: left;
     letter-spacing: -0.04em;
-    margin: 4px 0em;
+    margin: 0.25em 0em;
 }
 
 .containerbuttons{
@@ -259,29 +253,39 @@
     justify-content:space-between;
     align-items: center;
     padding-top: 30%;
-    padding-bottom: 20px;
+    padding-right: 4.25%;
+    padding-bottom: 1.25em;
 }
 
 .formhalf{
     position: absolute;
-    height: 35px;
+    width: 13.25em;
+    height: 2.5em;
     display: inline-flex;
 
     border: none;
-    border-bottom: 1px solid #A16373;
+    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.5);
     background: none;
     outline: none;
+
+    font-size: 0.75em;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .formfull{
     position: absolute;
-    width: 350px;
-    height: 35px;
+    width: 29em;
+    height: 2.5em;
 
     border: none;
-    border-bottom: 1px solid #A16373;
+    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.5);
     background: none;
     outline: none;
+
+    font-size: 0.75em;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /*Buttons*/
@@ -297,11 +301,10 @@
 
     width: 11em;
     height: 2.75em;
-    left: 2.75em;
-    top: 386px;
 
     background: #ABABAB;
-    border-radius: 5px;
+    border-color: transparent;
+    border-radius: 0.3125em;
 
     font-family: Catamaran;
     font-style: normal;
@@ -324,16 +327,13 @@
 
     width: 11em;
     height: 2.75em;
-    right: 2.75em;
-    left: 270px;
-    top: 386px;
 
     background: #A16373;
-    border-radius: 5px;
+    border-color: transparent;
+    border-radius: 0.3125em;
 
     font-family: Catamaran;
     font-style: normal;
-    font-weight: bold;
     font-size: 0.75em;
     line-height: 0.75em;
     letter-spacing: -0.04em;
@@ -345,5 +345,26 @@
 .icon{
    width: 1.125em;
    height: 1.125em;
+}
+
+.formhalf:focus{
+    color: black;
+    border-bottom: 0.0625em solid #A16373;
+}
+
+.formfull:focus{
+    color: black;
+    border-bottom: 0.0625em solid #A16373;
+}
+
+@media (max-width: 1000px) {
+    .containerheading{
+        margin-bottom: 4.5%;
+    }
+    .containercontent {
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
 }
 

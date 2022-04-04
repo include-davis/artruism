@@ -85,9 +85,15 @@ function Contact() {
                     <div className={styles.subheading}> artruismatdavis@gmail.com </div>
                 </div>
                 <div className={styles.containerconnectsocials}>
-                    <Image src="/../public/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'} />
-                    <Image src="/../public/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
-                    <Image src="/../public/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
+                    <a href="http://facebook.com">
+                        <Image src="/../public/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'}/>
+                    </a>
+                    <a href="http://instagram.com">
+                        <Image src="/../public/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
+                    </a>
+                    <a href="http://twitter.com">
+                        <Image src="/../public/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
+                    </a>
                 </div>
             </div>
 
@@ -106,6 +112,7 @@ function Contact() {
                     <div className={styles.formlabel}> Last name </div>
                         <input 
                             type="text"
+                            
                         // < label htmlFor='lastName'>Last Name</label>
                         // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
                             className={styles.formhalf}
@@ -155,7 +162,7 @@ function Contact() {
                 <div className={styles.containerbuttons}> 
                     <input
                         value="Clear Form"
-                        type="submit"
+                        type="reset"
                         className={styles.buttonclear}
                     />
 
