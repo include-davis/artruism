@@ -99,3 +99,22 @@
 .up_arrow {
     margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 320px) {
+
+    .container{
+        background-color: black;
+    }
+    
+    .side_navbar {
+        display: none;
+    }
+
+    .buttonContainer {
+        display: none;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
