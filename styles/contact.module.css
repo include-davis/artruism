@@ -1,3 +1,66 @@
+/* Text */
+.title, .subtitle, .heading, .subheading, .heading2{
+    font-family: Catamaran;
+    font-style: normal;
+    color: #232020;
+}
+
+/* Questions? Reach Out! */
+.title{
+    font-weight: 600;
+    font-size: 2.75em;
+    line-height: 1em;
+
+    margin-top: 15%;
+}
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+.subtitle{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: -0.04em;
+
+    margin-top: 1%;
+}
+
+/* Contact Information */
+.heading{
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.25em;
+}
+
+/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
+.subheading{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    display: inline;
+}
+
+/* Our Location; Connect With Us */
+.heading2{
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* First Name, Last Name, UC Davis email, etc. */
+.formlabel{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 0.875em;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
+
+    margin-top: -0.75em;
+}
+
+/*Main Containers*/
 .container{
     display: flex;
     flex-direction: column;
@@ -34,7 +97,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 3em;
+    padding: 3.3em;
     padding-right: 10.35em;
 
     background: #D4B7DF;
@@ -56,108 +119,29 @@
     border-radius: 0.625em;
 }
 
-/* Text */
-/* Questions? Reach Out! */
-.title{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.75em;
-    line-height: 1em;
-
-    color: #232020;
-    margin-top: 15%;
-}
-
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
-.subtitle{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.5em;
-    letter-spacing: -0.04em;
-
-    color: #232020;
-    margin-top: 1%;
-}
-
-/* Contact Information */
-.heading{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 1.25em;
-
-    color: #232020;
-}
-
-/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
-.subheading{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.5em;
-    color: #232020;
-
-    display: inline;
-}
-
-/* Our Location; Connect With Us */
-.heading2{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.5em;
-
-    color: #232020;
-}
-
-.formlabel{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.75em;
-    line-height: 0.875em;
-    letter-spacing: -0.04em;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-/* Contact Information Containers */
-.containerdescr{
+/* Containers: Contact Information */
+.containerdescr, .containerlocation, .containerconnect{
     position: static;
     width: 14.75em;
-    height: 10.5em;
 
     flex: none;
-    order: 0;
     flex-grow: 0;
     margin: 0em 0em;
+}
+
+.containerdescr{
+    height: 10.5em;
+    order: 0;
 }
 
 .containerlocation{
-    position: static;
-    width: 14.75em;
     height: 4.25em;
-
-    flex: none;
     order: 1;
-    flex-grow: 0;
-    margin: 0em 0em;
 }
 
 .containerconnect{
-    position: static;
-    width: 14.75em;
     height: 5em;
-
-    flex: none;
     order: 2;
-    flex-grow: 0;
-    margin: 0em 0em;
 }
 
 .containerconnect .subheading{ 
@@ -179,8 +163,8 @@
     margin: 0em -1.75em;
 }
 
-/* Form Containers */
-.containerfirstname{
+/* Containers: Form */
+.containerfirstname, .containerlastname, .containeremail, .containerphone{
     width: 11.25em;
     height: 3.125em;
 
@@ -191,42 +175,11 @@
     margin: 0.25em 0em;
 }
 
-.containerlastname{
-    width: 11.25em;
-    height: 3.125em;
-
-    display: inline-flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
+.containerlastname, .containerphone{
     padding-left: 0.5em;
-    margin: 0.25em 0em;
 }
 
-.containeremail{
-    width: 11.25em;
-    height: 3.125em;
-
-    display: inline-flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    margin: 0.25em 0em;
-}
-
-.containerphone{
-    width: 11.25em;
-    height: 3.125em;
-
-    display: inline-flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    padding-left: 0.5em;
-    margin: 0.25em 0em;
-}
-
-.containerreason{
+.containerreason, .containernotes{
     width: 23.125em;
     height: 3.125em;
 
@@ -234,16 +187,6 @@
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 0.25em 0em;
-}
-
-.containernotes{
-    width: 23.125em;
-    height: 3.125em;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
     margin: 0.25em 0em;
 }
 
@@ -257,42 +200,37 @@
     padding-bottom: 1.25em;
 }
 
-.formhalf{
+/*Form Text Box*/
+.formhalf, .formfull{
     position: absolute;
-    width: 13.25em;
-    height: 2.5em;
-    display: inline-flex;
-
     border: none;
     border-bottom: 0.0625em solid rgba(0, 0, 0, 0.5);
     background: none;
     outline: none;
 
+    height: 2.5em;
+
     font-size: 0.75em;
     letter-spacing: -0.04em;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.formhalf{
+    width: 13.25em;
+    display: inline-flex;
 }
 
 .formfull{
-    position: absolute;
     width: 29em;
-    height: 2.5em;
+}
 
-    border: none;
-    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.5);
-    background: none;
-    outline: none;
-
-    font-size: 0.75em;
-    letter-spacing: -0.04em;
-    color: rgba(0, 0, 0, 0.5);
+.formhalf:focus, .formfull:focus{
+    color: black;
+    border-bottom: 0.0625em solid #A16373;
 }
 
 /*Buttons*/
-
-/*Clear Form*/
-.buttonclear{
-    order: 1;
+.buttonclear, .buttonsubmit{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -302,59 +240,36 @@
     width: 11em;
     height: 2.75em;
 
-    background: #ABABAB;
-    border-color: transparent;
     border-radius: 0.3125em;
 
     font-family: Catamaran;
     font-style: normal;
-    font-weight: normal;
     font-size: 0.75em;
     line-height: 0.75em;
+}
 
+/*Clear Form*/
+.buttonclear{
+    order: 1;
     color: #000000;
+    background: #ABABAB;
+    border-color: transparent;
 }
 
 
 /*Submit Form*/
 .buttonsubmit{
     order: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3125em 1.25em;
-
-    width: 11em;
-    height: 2.75em;
-
+    color: #FCF7F8;
     background: #A16373;
     border-color: transparent;
-    border-radius: 0.3125em;
-
-    font-family: Catamaran;
-    font-style: normal;
-    font-size: 0.75em;
-    line-height: 0.75em;
     letter-spacing: -0.04em;
-
-    color: #FCF7F8;
 }
 
  /*Icons*/
 .icon{
    width: 1.125em;
    height: 1.125em;
-}
-
-.formhalf:focus{
-    color: black;
-    border-bottom: 0.0625em solid #A16373;
-}
-
-.formfull:focus{
-    color: black;
-    border-bottom: 0.0625em solid #A16373;
 }
 
 @media (max-width: 1000px) {
