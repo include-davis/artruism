@@ -3,17 +3,16 @@
 import styles from "../styles/contact.module.css"
 import Image from 'next/image'
 import Head from 'next/head'
-// import { useState } from 'react'
+import { useState } from 'react'
 
-// const [firstName, setFirstName] = useState('')
-// const [lastName, setLastName] = useState('')
-// const [email, setEmail] = useState('')
-// const [number, setNumber] = useState('')
-// const [reason, setReason] = useState('')
-// const [notes, setNotes] = useState('')
-// const [submitted, setSubmitted] = useState(false)
+const [firstName, setFirstName] = useState('')
+const [lastName, setLastName] = useState('')
+const [email, setEmail] = useState('')
+const [number, setNumber] = useState('')
+const [reason, setReason] = useState('')
+const [notes, setNotes] = useState('')
+const [submitted, setSubmitted] = useState(false)
 
-/*
 const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Sending')
@@ -26,27 +25,25 @@ const handleSubmit = (e) => {
         reason,
         notes
     }
-*/
 
-//   fetch('/api/contact', {
-//      method: 'POST',
-//      headers: {
-//        'Accept': 'application/json, text/plain, */*',
-/*        'Content-Type': 'application/json'
+    fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
     }).then((res) => {
-        console.log('Response received')
+        console.log('Response received!')
         if (res.status === 200) {
             console.log('Response succeeded!')
             setSubmitted(true) 
             setName('')
             setEmail('')
-            setMessage('')
+            setBody('')
         }
     })
-  }
-*/
+  })
 
 function Contact() {
     return (
@@ -102,8 +99,8 @@ function Contact() {
                     <div className={styles.formlabel}> First name </div>
                         <input 
                             type="text"
-                        // < label htmlFor='firstName'>First Name</label>
-                        // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
+                            < label htmlFor='firstName'>First Name</label>
+                            < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
@@ -123,8 +120,8 @@ function Contact() {
                     <div className={styles.formlabel}> UC Davis email </div>
                         <input 
                             type="text"
-                        // < label htmlFor='email'>UC Davis Email</label>
-                        // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+                            < label htmlFor='email'>UC Davis Email</label>
+                            < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
@@ -133,8 +130,8 @@ function Contact() {
                     <div className={styles.formlabel}> Phone number </div>
                         <input 
                             type="text"
-                    //  < label htmlFor='number'>Phone Number</label>
-                    // < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
+                            < label htmlFor='number'>Phone Number</label>
+                            < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
@@ -143,8 +140,8 @@ function Contact() {
                     <div className={styles.formlabel}> Reason for contact </div>
                         <input 
                             type="text"
-                        // < label htmlFor='reason'>Reason for contact</label>
-                        // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
+                            < label htmlFor='reason'>Reason for contact</label>
+                            < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
                             className={styles.formfull}
                         />
                 </div>
@@ -153,8 +150,8 @@ function Contact() {
                     <div className={styles.formlabel}> Additional notes </div>
                         <input 
                             type="text"
-                        // < label htmlFor='notes'>Additional Notes</label>
-                        // < input type='text' name='notes' className={styles.inputField} />
+                            < label htmlFor='notes'>Additional Notes</label>
+                            < input type='text' name='notes' className={styles.inputField} />
                             className={styles.formfull}
                         />
                 </div>
@@ -173,7 +170,7 @@ function Contact() {
                     />
                 </div>
 
-            {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
+                < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
             </div>
         </div>
       </div>
