@@ -1,19 +1,18 @@
 //Unless noted, the commented-out code is part of the project, and hasn't been debugged yet.
 
 import styles from "../styles/contact.module.css"
-// import formstyles from "../styles/contact/form.module.css"
+import Image from 'next/image'
 import Head from 'next/head'
-// import { useState } from 'react'
+import { useState } from 'react'
 
-// const [firstName, setFirstName] = useState('')
-// const [lastName, setLastName] = useState('')
-// const [email, setEmail] = useState('')
-// const [number, setNumber] = useState('')
-// const [reason, setReason] = useState('')
-// const [notes, setNotes] = useState('')
-// const [submitted, setSubmitted] = useState(false)
+const [firstName, setFirstName] = useState('')
+const [lastName, setLastName] = useState('')
+const [email, setEmail] = useState('')
+const [number, setNumber] = useState('')
+const [reason, setReason] = useState('')
+const [notes, setNotes] = useState('')
+const [submitted, setSubmitted] = useState(false)
 
-/*
 const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Sending')
@@ -26,27 +25,25 @@ const handleSubmit = (e) => {
         reason,
         notes
     }
-*/
 
-//   fetch('/api/contact', {
-//      method: 'POST',
-//      headers: {
-//        'Accept': 'application/json, text/plain, */*',
-/*        'Content-Type': 'application/json'
+    fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
     }).then((res) => {
-        console.log('Response received')
+        console.log('Response received!')
         if (res.status === 200) {
             console.log('Response succeeded!')
             setSubmitted(true) 
             setName('')
             setEmail('')
-            setMessage('')
+            setBody('')
         }
     })
   }
-*/
 
 function Contact() {
     return (
@@ -66,7 +63,7 @@ function Contact() {
             </div>
         </div>
 
-        <div className={styles.container2}>
+        <div className={styles.containercontent}>
             <div className={styles.containerinfo}>
                 <div className={styles.containerdescr}> 
                     <div className={styles.heading}> Contact Information </div>
@@ -78,82 +75,82 @@ function Contact() {
                 </div>
                 <div className={styles.containerconnect}>
                     <div className={styles.heading2}> Connect With Us </div>
-                    <div className={styles.containerconnect2}>
-                        <div className={styles.subheading}> 
-                            (123) 456-7890 
-                            artruismatdavis@gmail.com 
-                        </div>
-                    </div>
+                    <Image src="/../public/icons/phone.png" className={styles.icon} alt="phone icon" width={'18%'} height={'18%'} />
+                    <div className={styles.subheading}> (123) 456-7890 </div>
+                    <br></br>
+                    <Image src="/../public/icons/mail.png" className={styles.icon} alt="mail icon" width={'20%'} height={'22%'}/>
+                    <div className={styles.subheading}> artruismatdavis@gmail.com </div>
                 </div>
                 <div className={styles.containerconnectsocials}>
-                        
+                    <a href="http://facebook.com">
+                        <Image src="/../public/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'}/>
+                    </a>
+                    <a href="http://instagram.com">
+                        <Image src="/../public/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
+                    </a>
+                    <a href="http://twitter.com">
+                        <Image src="/../public/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
+                    </a>
                 </div>
             </div>
 
             <div className={styles.containerform}> 
-                {/* should this be a form instead of a div? */}
                 <div className={styles.containerfirstname}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> First name </div>
                         <input 
                             type="text"
-                        // < label htmlFor='firstName'>First Name</label>
-                        // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
+                            //< label htmlFor='firstName'>First Name</label>
+                            < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
 
                 <div className={styles.containerlastname}> 
-                {/* // should this be a formGroup? */}
                     <div className={styles.formlabel}> Last name </div>
                         <input 
                             type="text"
-                        // < label htmlFor='lastName'>Last Name</label>
-                        // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
+                            //< label htmlFor='lastName'>Last Name</label>
+                            < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
-
+                <br></br>
                 <div className={styles.containeremail}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> UC Davis email </div>
                         <input 
                             type="text"
-                        // < label htmlFor='email'>UC Davis Email</label>
-                        // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+                            //< label htmlFor='email'>UC Davis Email</label>
+                            < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
 
                 <div className={styles.containerphone}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Phone number </div>
                         <input 
                             type="text"
-                    //  < label htmlFor='number'>Phone Number</label>
-                    // < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
+                            //< label htmlFor='number'>Phone Number</label>
+                            < input type='text' onChange={(e)=>{setNumber(e.target.value)}} name='number' className={styles.inputField} />
                             className={styles.formhalf}
                         />
                 </div>
 
                 <div className={styles.containerreason}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Reason for contact </div>
                         <input 
                             type="text"
-                        // < label htmlFor='reason'>Reason for contact</label>
-                        // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
+                            //< label htmlFor='reason'>Reason for contact</label>
+                            < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
                             className={styles.formfull}
                         />
                 </div>
 
                 <div className={styles.containernotes}> 
-                {/* //formGroup? */}
                     <div className={styles.formlabel}> Additional notes </div>
                         <input 
                             type="text"
-                        // < label htmlFor='notes'>Additional Notes</label>
-                        // < input type='text' name='notes' className={styles.inputField} />
+                            //< label htmlFor='notes'>Additional Notes</label>
+                            < input type='text' name='notes' className={styles.inputField} />
                             className={styles.formfull}
                         />
                 </div>
@@ -161,7 +158,7 @@ function Contact() {
                 <div className={styles.containerbuttons}> 
                     <input
                         value="Clear Form"
-                        type="submit"
+                        type="reset"
                         className={styles.buttonclear}
                     />
 
@@ -172,7 +169,7 @@ function Contact() {
                     />
                 </div>
 
-            {/* input type='submit' onClick={(e)=>{handleSubmit(e)}} */}
+                < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
             </div>
         </div>
       </div>

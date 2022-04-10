@@ -1,3 +1,66 @@
+/* Text */
+.title, .subtitle, .heading, .subheading, .heading2{
+    font-family: Catamaran;
+    font-style: normal;
+    color: #232020;
+}
+
+/* Questions? Reach Out! */
+.title{
+    font-weight: 600;
+    font-size: 2.75em;
+    line-height: 1em;
+
+    margin-top: 15%;
+}
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+.subtitle{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: -0.04em;
+
+    margin-top: 1%;
+}
+
+/* Contact Information */
+.heading{
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.25em;
+}
+
+/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
+.subheading{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    display: inline;
+}
+
+/* Our Location; Connect With Us */
+.heading2{
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* First Name, Last Name, UC Davis email, etc. */
+.formlabel{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 0.875em;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.5);
+
+    margin-top: -0.75em;
+}
+
+/*Main Containers*/
 .container{
     display: flex;
     flex-direction: column;
@@ -12,9 +75,10 @@
 .containerheading{
     text-align: center;
     order: 1; 
+    width: 60%;
 }
 
-.container2{
+.containercontent{
     order: 2;
     display: flex;
     flex-direction: row;
@@ -24,7 +88,7 @@
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .containerinfo{
@@ -33,225 +97,97 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    padding: 3.3em;
+    padding-right: 10.35em;
 
     background: #D4B7DF;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0.625em;
 }
 
 .containerform{
     order: 2;
-    display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 2em;
+    padding-left: 3em;
     left: 50%;
 
     background: #FCF7F8;
-    border: 1px solid #232020;
+    border: 0.0625em solid #232020;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 0.625em;
 }
 
-/* Text */
-/* Questions? Reach Out! */
-.title{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 52px;
-
-    color: #232020;
-    margin-top: 20%;
-}
-
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
-.subtitle{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: -0.04em;
-
-    color: #232020;
-    margin-top: 1%;
-}
-
-/* Contact Information */
-.heading{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-
-    color: #232020;
-}
-
-/* Reach out to us via these contact methods. Email us for any questions, concerns, and more. */
-.subheading{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    
-    color: #232020;
-}
-
-/* Our Location; Connect With Us */
-.heading2{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 23px;
-
-    color: #232020;
-}
-
-/* Contact Information Containers */
-.containerdescr{
+/* Containers: Contact Information */
+.containerdescr, .containerlocation, .containerconnect{
     position: static;
-    width: 237px;
-    height: 169px;
-    left: 0px;
-    top: 23px;
+    width: 14.75em;
 
     flex: none;
-    order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em 0em;
+}
+
+.containerdescr{
+    height: 10.5em;
+    order: 0;
 }
 
 .containerlocation{
-    position: static;
-    width: 237px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
-
-    flex: none;
+    height: 4.25em;
     order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
 }
 
 .containerconnect{
-    position: static;
-    width: 237px;
-    height: 79px;
-    left: 40px;
-    top: 0px;
-
-    flex: none;
+    height: 5em;
     order: 2;
-    flex-grow: 0;
-    margin: 0px 0px;
 }
 
-.containerconnect2{
-    margin: 0px 18px;
+.containerconnect .subheading{ 
+    padding-left: 5%;
 }
 
 .containerconnectsocials{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding: 1.75em;
+    padding-bottom: 0em;
 
+    width: 70%;
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0em -1.75em;
 }
 
-/* Form Containers */
-.containerfirstname{
-    width: 180px;
-    height: 50px;
-    left: 44px;
-    top: 30px;
+/* Containers: Form */
+.containerfirstname, .containerlastname, .containeremail, .containerphone{
+    width: 11.25em;
+    height: 3.125em;
+
+    display: inline-flex;
+    align-items: left;
+    letter-spacing: -0.04em;
+
+    margin: 0.25em 0em;
+}
+
+.containerlastname, .containerphone{
+    padding-left: 0.5em;
+}
+
+.containerreason, .containernotes{
+    width: 23.125em;
+    height: 3.125em;
 
     display: flex;
     align-items: left;
     letter-spacing: -0.04em;
 
-    margin: 4px 0px;
-}
-
-.containerlastname{
-    width: 180px;
-    height: 50px;
-    left: 264px;
-    top: 30px;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 4px 0px;
-}
-
-.containeremail{
-    width: 180px;
-    height: 50px;
-    left: 44px;
-    top: 92px;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 4px 0px;
-}
-
-.containerphone{
-    width: 180px;
-    height: 50px;
-    left: 264px;
-    top: 92px;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    margin: 4px 0px;
-}
-
-.containerreason{
-    width: 370px;
-    height: 50px;
-    left: 44px;
-    top: 154px;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-
-    margin: 4px 0px;
-}
-
-.containernotes{
-    width: 370px;
-    height: 50px;
-    left: 44px;
-    top: 216px;
-
-    display: flex;
-    align-items: left;
-    letter-spacing: -0.04em;
-    margin: 4px 0px;
+    margin: 0.25em 0em;
 }
 
 .containerbuttons{
@@ -259,94 +195,91 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding-top: 30%;
+    padding-right: 4.25%;
+    padding-bottom: 1.25em;
 }
 
-.formlabel{
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+/*Form Text Box*/
+.formhalf, .formfull{
+    position: absolute;
+    border: none;
+    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.5);
+    background: none;
+    outline: none;
+
+    height: 2.5em;
+
+    font-size: 0.75em;
     letter-spacing: -0.04em;
     color: rgba(0, 0, 0, 0.5);
-
 }
 
 .formhalf{
-    position: absolute;
-    height: 35px;
-
-    border: none;
-    border-bottom: 1px solid #A16373;
-    background: none;
-    outline: none;
+    width: 13.25em;
+    display: inline-flex;
 }
 
 .formfull{
-    position: absolute;
-    width: 370px;
-    height: 35px;
+    width: 29em;
+}
 
-    border: none;
-    border-bottom: 1px solid #A16373;
-    background: none;
-    outline: none;
+.formhalf:focus, .formfull:focus{
+    color: black;
+    border-bottom: 0.0625em solid #A16373;
 }
 
 /*Buttons*/
-
-/*Clear Form*/
-.buttonclear{
-    order: 1;
+.buttonclear, .buttonsubmit{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0.3125em 1.25em;
 
-    width: 130px;
-    height: 32px;
-    left: 44px;
-    top: 386px;
+    width: 11em;
+    height: 2.75em;
 
-    background: #ABABAB;
-    border-radius: 5px;
+    border-radius: 0.3125em;
 
     font-family: Catamaran;
     font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.75em;
+    line-height: 0.75em;
+}
 
+/*Clear Form*/
+.buttonclear{
+    order: 1;
     color: #000000;
+    background: #ABABAB;
+    border-color: transparent;
 }
 
 
 /*Submit Form*/
 .buttonsubmit{
     order: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 40px;
-
-    width: 130px;
-    height: 32px;
-    right: 44px;
-    left: 270px;
-    top: 386px;
-
-    background: #A16373;
-    border-radius: 5px;
-
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: -0.04em;
-
     color: #FCF7F8;
+    background: #A16373;
+    border-color: transparent;
+    letter-spacing: -0.04em;
 }
+
+ /*Icons*/
+.icon{
+   width: 1.125em;
+   height: 1.125em;
+}
+
+@media (max-width: 1000px) {
+    .containerheading{
+        margin-bottom: 4.5%;
+    }
+    .containercontent {
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+

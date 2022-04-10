@@ -1,37 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap');
+
+.arrowWrap {
+  display: none;
+}
+
 .container {
   width: 100%;
+  padding: 16px;
   text-align: center;
   font-family: "Catamaran";
 }
 
-.container>h1 {
+.container>h2 {
+  font-size: 45px;
+  line-height: 52px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .container>p {
-  font-weight:400;
+  font-weight: 400;
+  margin-bottom: 95px;
 }
 
 .red {
   background-color: #D3ACD2;
   border-radius: 50%;
-  color: white;
+  /* color: white; */
 }
 
-.hello {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-max-width: 1035px;
-margin: auto;
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 72px;
+  align-items: center;
+  max-width: 1035px;
+  margin: auto;
 }
 
-.cool {
+.featured {
   text-align: left;
+  width: 40%;
+  max-width: 413px;
+  flex-shrink: 1;
 }
 
+.featured>h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
 
+.featured>p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
 
+@media (max-width: 768px) {
+  .content {
+    flex-flow: column nowrap;
+    max-width: 550px;
+  }
 
+  .featured {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 550px;
+  }
+}
 
+@media (max-width: 450px) {
+  .arrowWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container>p {
+    margin-bottom: 20px;
+  }
+  .featured {
+    margin-top: 0;
+  }
+}

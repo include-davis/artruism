@@ -16,10 +16,11 @@ export default function (req, res) {
     });
     
     const mailData = {
-        from: 'demo email',
+        from: 'artruismdavis@gmail.com',
         to: 'your email',
         subject: `Message From ${req.body.name}`,
-        text: req.body.message + " | Sent from: " + req.body.email,
+        text: "Reason for sending message: " + req.body.reason + " | Message: req.body.message + " | Sent from: " + req.body.firstname + " " + req.body.lastname + " " + req.body.email + " " + req.body.number,
+        //check that these should all be in email and that formatting is fine
         html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
     }
   
@@ -30,6 +31,8 @@ export default function (req, res) {
           console.log(info);
     })
   
-    console.log(req.body)
-    res.send('success')
+    res.status(200)
+  
+    // console.log(req.body)
+    
   }
