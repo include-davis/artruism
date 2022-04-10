@@ -2,19 +2,19 @@ import Calendar, { CalendarTileProperties } from 'react-calendar'
 import styles from '/styles/cal.module.css'
 import { useState, useEffect } from 'react'
 
-// interface IEvent {
-//   title: string
-//   start: Date
-//   end: Date
-//   description: string
-// }
-
 function FeaturedTile({ featured }) {
-  if (!featured || featured === undefined) return null
-  console.log("in featured tile")
-  console.log(featured)
+  if (!featured || featured === undefined) {
+    return (
+      <div className={styles.featured}>
+        <h2>No event on selected date</h2>
+        <p>Click on a highlighted date to see event details.</p>
+      </div>
+    )
+  }
+  // console.log("in featured tile")
+  // console.log(featured)
   return (
-    <div className={styles.cool}>
+    <div className={styles.featured}>
       <h2>{featured.title}</h2>
       <p>starts at {featured.start.toString()}</p>
       <p>ends at {featured.end.toLocaleString()}</p>
@@ -56,7 +56,8 @@ export default function Cal() {
   ]
 
   const [date, setDate] = useState(new Date())
-  const [featured, setFeatured] = useState(null)
+  const [featuredIdx, setFeaturedIdx] = useState(events.length - 1)
+  const [featured, setFeatured] = useState(events[events.length - 1])
 
   function onChange(nextValue, event) {
     setDate(nextValue)
@@ -72,21 +73,40 @@ export default function Cal() {
     }
   }
 
+  function prevDate() {
+    if (featuredIdx === 0) return
+    setFeaturedIdx((current) => current - 1);
+  }
+
+  function nextDate() {
+    if (featuredIdx === events.length - 1) return
+    setFeaturedIdx((current) => current + 1);
+  }
+
+  useEffect(() => {
+    console.log(featuredIdx)
+    setFeatured(events[featuredIdx])
+  }, [featuredIdx])
+
   return (
     <section className={styles.container}>
-      <h1>Calendar Of Events</h1>
+      <h2>Calendar Of Events</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div className={styles.hello}>
-      <Calendar
-        calendarType="US"
-        value={date}
-        view="month"
-        onChange={onChange}
-        tileClassName={filterEvents}
-        prev2Label={null}
-        next2Label={null}
-      />
-      <FeaturedTile featured={featured} />
+      <div className={styles.content}>
+        <Calendar
+          calendarType="US"
+          value={date}
+          view="month"
+          onChange={onChange}
+          tileClassName={filterEvents}
+          prev2Label={null}
+          next2Label={null}
+        />
+        <FeaturedTile featured={featured} />
+      </div>
+      <div className={styles.arrowWrap}> 
+        <button onClick={prevDate}>{"<"}</button>
+        <button onClick={nextDate}>{">"}</button>
       </div>
     </section>
   )
