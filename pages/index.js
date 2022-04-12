@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import Homepage from './home'
 import About from './about'
 import Gallery from './gallery/index'
 import Calendar from './calendar'
@@ -19,7 +20,10 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Nav />
+        <div id='home'><Homepage /></div>
         <div id="about"><About /></div>
+        
+
         <div id="gallery"><Gallery /></div>
         <div id="calendar"><Calendar /></div>
         <div id="join"><Join /></div>

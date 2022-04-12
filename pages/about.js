@@ -1,6 +1,6 @@
 import Head from "next/head"
 import styles from "../styles/about.module.css"
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 import { FaFacebook, FaInstagram, Fainstagram, FaLinkedin, Falinkedin } from 'react-icons/fa';
 
 function About() {
