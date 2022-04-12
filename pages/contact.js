@@ -3,7 +3,16 @@ import Image from 'next/image'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
-const handleSubmit = (e) => {
+function Contact() {
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [email, setEmail] = useState('')
+    const [number, setNumber] = useState('')
+    const [reason, setReason] = useState('')
+    const [notes, setNotes] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+    
+    const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Sending')
 
@@ -35,18 +44,11 @@ const handleSubmit = (e) => {
     })
 }
 
-function Contact() {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [number, setNumber] = useState('')
-    const [reason, setReason] = useState('')
-    const [notes, setNotes] = useState('')
-    const [submitted, setSubmitted] = useState(false)
-
+    /* debugging
     useEffect(() => {
         console.log(number)
     }, [number])
+    */
 
     return (
         <div className={styles.container}>
