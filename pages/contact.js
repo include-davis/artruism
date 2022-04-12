@@ -37,8 +37,12 @@ function Contact() {
         if (res.status === 200) {
             console.log('Response succeeded!')
             setSubmitted(true)
-            setName('')
+            setFirstName('')
+            setLastName('')
             setEmail('')
+            setNumber('')
+            setReason('')
+            setNotes('')
             setBody('')
         }
     })
