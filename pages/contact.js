@@ -103,8 +103,7 @@ function Contact() {
                         <div className={styles.formlabel}> First name </div>
                         <input
                             type="text"
-                            //< label htmlFor='firstName'>First Name</label>
-                            // < input type='text' onChange={(e)=>{setFirstName(e.target.value)}} name='firstName' className={styles.inputField} />
+                            onChange={(e)=>{setFirstName(e.target.value)}} name='firstName'
                             className={styles.formhalf}
                         />
                     </div>
@@ -113,8 +112,7 @@ function Contact() {
                         <div className={styles.formlabel}> Last name </div>
                         <input
                             type="text"
-                            //< label htmlFor='lastName'>Last Name</label>
-                            // < input type='text' onChange={(e)=>{setLastName(e.target.value)}} name='lastName' className={styles.inputField} />
+                            onChange={(e)=>{setLastName(e.target.value)}} name='lastName'
                             className={styles.formhalf}
                         />
                     </div>
@@ -123,8 +121,7 @@ function Contact() {
                         <div className={styles.formlabel}> UC Davis email </div>
                         <input
                             type="text"
-                            //< label htmlFor='email'>UC Davis Email</label>
-                            // < input type='text' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+                            onChange={(e)=>{setEmail(e.target.value)}} name='email'
                             className={styles.formhalf}
                         />
                     </div>
@@ -133,19 +130,16 @@ function Contact() {
                         <div className={styles.formlabel}> Phone number </div>
                         <input
                             type="text"
-                            //< label htmlFor='number'>Phone Number</label>
                             onChange={(e) => { setNumber(e.target.value) }} name='number'
                             className={styles.formhalf}
                         />
-                        {/* <input type='text'  className={styles.inputField} /> */}
                     </div>
 
                     <div className={styles.containerreason}>
                         <div className={styles.formlabel}> Reason for contact </div>
                         <input
                             type="text"
-                            //< label htmlFor='reason'>Reason for contact</label>
-                            // < input type='text' onChange={(e)=>{setReason(e.target.value)}} name='reason' className={styles.inputField} />
+                            onChange={(e)=>{setReason(e.target.value)}} name='reason'
                             className={styles.formfull}
                         />
                     </div>
@@ -154,8 +148,7 @@ function Contact() {
                         <div className={styles.formlabel}> Additional notes </div>
                         <input
                             type="text"
-                            //< label htmlFor='notes'>Additional Notes</label>
-                            // < input type='text' name='notes' className={styles.inputField} />
+                            onChange={(e)=>{setNotes(e.target.value)}} name='notes'
                             className={styles.formfull}
                         />
                     </div>
