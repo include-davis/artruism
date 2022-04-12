@@ -1,5 +1,3 @@
-//Unless noted, the commented-out code is part of the project, and hasn't been debugged yet.
-
 import styles from "../styles/contact.module.css"
 import Image from 'next/image'
 import Head from 'next/head'
