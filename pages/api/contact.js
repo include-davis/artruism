@@ -1,3 +1,6 @@
+// TODO: If deploying app to live site, include password as environmental variable
+// If you're an officer and you need it, ask Uma Shankar for the password on discord
+
 export default function (req, res) {
     require('dotenv').config()
 
@@ -6,10 +9,7 @@ export default function (req, res) {
       port: 465,     
       host: "smtp.gmail.com",
          auth: {
-              user: 'demo@demo.gemail',
-             // To use password: create .env file. In the file, write (without quotes)
-             // "password=whateverthepasswordis"
-             // include the .env in your gitignore
+              user: 'artruismdavis@gmail.com',
               pass: process.env.password,
            },
       secure: true,
@@ -17,9 +17,9 @@ export default function (req, res) {
     
     const mailData = {
         from: 'artruismdavis@gmail.com',
-        to: 'your email',
+        to: 'artruismdavis@gmail.com', //TODO: Replace this with the email of the appropriate Artruism officer
         subject: `Message From ${req.body.name}`,
-        text: "Reason for sending message: " + req.body.reason + " | Message: req.body.message + " | Sent from: " + req.body.firstname + " " + req.body.lastname + " " + req.body.email + " " + req.body.number,
+        text: "Reason for sending message: " + req.body.reason + " | Message: " + req.body.message + " | Notes: " + req.body.notes  "Sent from: " + req.body.firstName + " " + req.body.lastName + " " + req.body.email + " " + req.body.number,
         //check that these should all be in email and that formatting is fine
         html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
     }
@@ -32,7 +32,5 @@ export default function (req, res) {
     })
   
     res.status(200)
-  
-    // console.log(req.body)
     
   }
