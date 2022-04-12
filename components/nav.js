@@ -15,21 +15,21 @@ function Nav() {
                 </div>
 
                 <ul className={styles.navMenu}>
-                    <li><Link href="/"><a>Home</a></Link></li>
-                    <li><Link href="#about"><a>About Us</a></Link></li>
-                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
-                    <li><Link href="#calendar"><a>Events</a></Link></li>
-                    <li><Link href="#contact"><a>Contact</a></Link></li>
+                    <li><Link href="/"><a className={styles.navlink}>Home</a></Link></li>
+                    <li><Link href="#about"><a className={styles.navlink}>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a className={styles.navlink}>Gallery</a></Link></li>
+                    <li><Link href="#calendar"><a className={styles.navlink}>Events</a></Link></li>
+                    <li><Link href="#contact"><a className={styles.navlink}>Contact</a></Link></li>
                 </ul>
             </div>
             <div className={styles.side_navbar}>
                 <ul>
-                    <li><Link href="/"><a>Home</a></Link></li>
-                    <li><Link href="#about"><a>About Us</a></Link></li>
-                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
-                    <li><Link href="#calendar"><a>Events</a></Link></li>
-                    <li><Link href="#join"><a>Join Us</a></Link></li>
-                    <li><Link href="#contact"><a>Contact</a></Link></li>
+                    <li><Link href="/"><a class={styles.sidenavlink}>Home</a></Link></li>
+                    <li><Link href="#about"><a class={styles.sidenavlink}>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a class={styles.sidenavlink}>Gallery</a></Link></li>
+                    <li><Link href="#calendar"><a class={styles.sidenavlink}>Events</a></Link></li>
+                    <li><Link href="#join"><a class={styles.sidenavlink}>Join Us</a></Link></li>
+                    <li><Link href="#contact"><a class={styles.sidenavlink}>Contact</a></Link></li>
                 </ul>
             </div>
 

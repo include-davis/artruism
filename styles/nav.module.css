@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;700&display=swap');
 
+.navlink{
+    text-decoration: none;
+    color:white;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -80,6 +85,11 @@
     line-height: 23px;
     letter-spacing: -0.04em;
 
+}
+
+.sidenavlink{
+    text-decoration: none;
+    color:black;
 }
 
 .side_navbar li {
