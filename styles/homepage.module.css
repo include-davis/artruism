@@ -215,3 +215,31 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 700px){
+    .home_container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .home_headerContainer{
+        padding-bottom: 60%;
+    }
+
+    .home_header{
+        font-size: 36px;;
+    }
+
+    .home_mainContent{
+        width:100%;
+        margin-left: 10%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+
+    .home_button_container{
+        margin-top: 5%;
+        flex-direction: row;
+    }
+}
