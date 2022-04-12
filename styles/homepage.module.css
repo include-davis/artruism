@@ -1,46 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
 .home_container{
-    
     font-family: Catamaran;
 }
 
 .home_headerContainer{
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     padding-bottom: 30%;
     background:pink;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 .home_header{
-    color:blue;
-    margin-left:30%;
+    color:white;
+    position:absolute;
+    top: 40%;
+    font-size: 72px
 }
 
 .home_mainContent{
-    margin-left:20%;
-    margin-right: 20%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right:20%;
     display:flex;
     flex-direction: row;
+    justify-content: flex-start;
     width: 100%;
     
 }
 
 .home_logo{
-    width: 30%;
+    width: 20%;
     margin-right: 5%;
 }
 
 .home_copytext{
-    width:70%;
+   width: 40%;
 }
-
-/*.home_home_button_container{
-    margin-right: 5%;
-}*/
 
 .home_button_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .home_button_container button:first-child {
@@ -204,5 +206,12 @@
     margin: 0px 10px;
 
     white-space: nowrap;
+    justify-content: center;
+}
+
+.downArrow{
+    margin-top: 2.5%;
+    /*background-color: aqua;*/
+    display: flex;
     justify-content: center;
 }
