@@ -1,120 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
-.join title {
-    position: static;
-    width: 660px;
-    height: 52px;
-    left: 142.5px;
-    top: 0px;
-    
+.join {
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.join h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
     font-family: Catamaran;
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 52px;
-    /* identical to box height, or 116% */
-    display: flex;
-    align-items: center;
     letter-spacing: -0.04em;
-    
+
     color: #000000;
-    
-    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 40px 0px;
 
-    /*Added*/
-    margin-left: auto;
-    margin-right: auto;
-    white-space: nowrap
+    margin-left: 15%;
+    margin-right: 15%;
 }
-
-.joinimg img {
+.join img {
     object-fit: cover;
-    position: static;
-    width: 945px;
+
+    width: 67%;
     height: 390.17px;
     left: 0px;
     top: 92px;
-    
-    background: url(../public/joinus.png);
 
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 40px 0px;
 
-    display: block;
+    display: flex;
+    justify-items: center;
     margin-left: auto;
     margin-right: auto;
-
+ 
 }
 
-.description p {
-    position: static;
-    width: 943px;
-    height: 92px;
-    left: 1px;
-    top: 522.17px;
-    
+.content{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -50px;
+    position: relative;
+}
+
+.desc {
+    width: 66%;
+
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    /* or 144% */
-    display: flex;
-    align-items: center;
     letter-spacing: -0.04em;
     
     color: #000000;
-    
-    
-    /* Inside auto layout */
+
     flex: none;
     order: 2;
     flex-grow: 0;
     margin: 40px 0px;
 
-    /*Added*/
     margin-left: auto;
     margin-right: auto;
+
 }
 
-.button_container {
+.button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin-top: -10px; 
 }
 
-.button_container button:first-child {
+
+.button button:first-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     
-    position: static;
-    width: 136px;
-    height: 43px;
+    width: 136px; 
+    height: 43px; 
     left: 0px;
     top: 0px;
     
     background: #A16373;
     border-radius: 14px;
     border: #000000;
-    
-    /* Inside auto layout */
+     
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 40px;
+    margin: 0px 2vw;
+} 
 
-}
-.button_container button:first-child p {
-    position: static;
+.button button:first-child p {
     width: 96px;
     height: 23px;
     left: 20px;
@@ -125,7 +122,7 @@
     font-weight: bold;
     font-size: 14.5px;
     line-height: 23px;
-    /* identical to box height, or 144% */
+
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
@@ -133,7 +130,6 @@
     color: #FCF7F8;
     
     
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -143,33 +139,29 @@
     justify-content: center;
 }
 
-.button_container button:nth-child(2){
+.button button:nth-child(2){
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     
-    position: static;
     width: 148px;
     height: 43px;
     left: 0px;
     top: 0px;
     
-    /*edited & added*/
     background: none;
     border-radius: 14px;
-    border: 1px solid; 
-    
-    /* Inside auto layout */
+    border: 1px solid;   
+
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 40px;
+    margin: 0px 2vw;
 }
 
-.button_container button:nth-child(2) p {
-    position: static;
+.button button:nth-child(2) p {
     width: 108px;
     height: 23px;
     left: 20px;
@@ -180,7 +172,7 @@
     font-weight: normal;
     font-size: 14.5px;
     line-height: 23px;
-    /* identical to box height, or 144% */
+
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
@@ -188,7 +180,7 @@
     color: #232020;
     
     
-    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -198,33 +190,32 @@
     justify-content: center;
 }
 
-.button_container button:nth-child(3){
+.button button:nth-child(3){
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     
-    position: static;
     width: 186px;
     height: 43px;
     left: 0px;
     top: 0px;
     
-    /*edited & added*/
+ 
     background: none;
     border-radius: 14px;
     border: 1px solid; 
     
-    /* Inside auto layout */
+    
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 40px;
+    margin: 0px 2vw;
 }
 
-.button_container button:nth-child(3) p {
-    position: static;
+.button button:nth-child(3) p {
+
     width: 146px;
     height: 23px;
     left: 20px;
@@ -235,7 +226,7 @@
     font-weight: normal;
     font-size: 14.5px;
     line-height: 23px;
-    /* identical to box height, or 144% */
+  
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
@@ -243,7 +234,7 @@
     color: #232020;
     
     
-    /* Inside auto layout */
+    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -251,4 +242,215 @@
 
     white-space: nowrap;
     justify-content: center;
+} 
+
+@media (max-width: 700px) {
+    .join {
+        margin: 0px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .join img {
+        object-fit: cover;
+    
+        width: 80%;
+        height: 390.17px;
+        left: 0px;
+        top: 92px;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 40px 0px;
+    
+        display: flex;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }    
+
+    .desc {
+        width: 79%;
+    
+        font-family: Catamaran;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: -0.04em;
+        
+        color: #000000;
+    
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin: 40px 0px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    }    
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px; 
+    }    
+    .button button:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        
+        width: 110px; 
+        height: 43px; 
+        left: 0px;
+        top: 0px;
+        
+        background: #A16373;
+        border-radius: 14px;
+        border: #000000;
+         
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 2px;
+    } 
+    
+    .button button:first-child p {
+        width: 96px;
+        height: 23px;
+        left: 20px;
+        top: 10px;
+        
+        font-family: Catamaran;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 23px;
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.04em;
+        
+        color: #FCF7F8;
+        
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+        
+        white-space: nowrap;
+        justify-content: center;
+    }
+    
+    .button button:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        
+        width: 120px;
+        height: 43px;
+        left: 0px;
+        top: 0px;
+        
+        background: none;
+        border-radius: 14px;
+        border: 1px solid; 
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 2px;
+    }
+    
+    .button button:nth-child(2) p {
+        width: 108px;
+        height: 23px;
+        left: 20px;
+        top: 10px;
+        
+        font-family: Catamaran;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 23px;
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.04em;
+        
+        color: #232020;
+        
+        
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+    
+        white-space: nowrap;
+        justify-content: center;
+    }
+    
+    .button button:nth-child(3){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        
+        width: 150px;
+        height: 43px;
+        left: 0px;
+        top: 0px;
+        
+     
+        background: none;
+        border-radius: 14px;
+        border: 1px solid; 
+        
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 2px;
+    }
+    
+    .button button:nth-child(3) p {
+        width: 146px;
+        height: 23px;
+        left: 20px;
+        top: 10px;
+        
+        font-family: Catamaran;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 23px;
+      
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.04em;
+        
+        color: #232020;
+        
+        
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+    
+        white-space: nowrap;
+        justify-content: center;
+    } 
 }
