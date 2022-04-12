@@ -19,7 +19,7 @@ export default function (req, res) {
         from: 'artruismdavis@gmail.com',
         to: 'artruismdavis@gmail.com', //TODO: Replace this with the email of the appropriate Artruism officer
         subject: `Message From ${req.body.name}`,
-        text: "Reason for sending message: " + req.body.reason + " | Message: " + req.body.message + " | Notes: " + req.body.notes  "Sent from: " + req.body.firstName + " " + req.body.lastName + " " + req.body.email + " " + req.body.number,
+        text: "Reason for sending message: " + req.body.reason + " | Message: " + req.body.message + " | Notes: " + req.body.notes + "Sent from: " + req.body.firstName + " " + req.body.lastName + " " + req.body.email + " " + req.body.number,
         //check that these should all be in email and that formatting is fine
         html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
     }
