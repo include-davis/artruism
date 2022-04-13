@@ -18,9 +18,8 @@ export default function (req, res) {
     const mailData = {
         from: 'artruismdavis@gmail.com',
         to: 'artruismdavis@gmail.com', //TODO: Replace this with the email of the appropriate Artruism officer
-        subject: `Contact Form Message From ${req.body.firstName} ${req.body.lastName}`,
-        //text: "Reason for sending message: " + req.body.reason + " | Additional Notes: " + req.body.notes + "Sent from: " + req.body.firstName + " " + req.body.lastName + " " + req.body.email + " " + req.body.number,
-        html: `<div>Reason for sending message: ${req.body.reason}</div><div>Additional notes: ${req.body.notes}</div><p>Reachable at the following email and/or number: ${req.body.email} ${req.body.number}</p>`
+        subject: `${req.body.firstName} ${req.body.lastName} - ${req.body.reason}`,
+        html: `<div>Additional notes: ${req.body.notes}</div><p>${req.body.firstName} ${req.body.lastName} is reachable at the following email and/or number: ${req.body.email} ${req.body.number}</p>`
     }
   
     transporter.sendMail(mailData, function (err, info) {
