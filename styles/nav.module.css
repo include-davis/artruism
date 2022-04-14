@@ -76,6 +76,7 @@
     height: 178px;
     top:224px;
     left: 71.69px;
+    margin-right: 10rem;
 
     /*font settings*/
     font-family: Catamaran;
@@ -103,7 +104,7 @@
     font-size: 16px;
     margin-left: 10rem;
     margin-top: 30rem;
-    margin-right: 7.519375rem;
+    margin-right: 5rem;
     align-items: flex-end;
 }
 
