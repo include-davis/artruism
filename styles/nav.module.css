@@ -112,10 +112,16 @@
     margin-right: 0.5rem;
 }
 
+.hamburger_icon {
+    display: none;
+
+}
 @media only screen and (max-width: 700px) {
 
     .container{
-        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .side_navbar {
@@ -129,4 +135,10 @@
     .navMenu {
         display: none;
     }
+
+    .hamburger_icon {
+        display: inline;
+    }
+
+    
 }

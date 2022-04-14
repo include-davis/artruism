@@ -21,7 +21,13 @@ function Nav() {
                     <li><Link href="#calendar"><a className={styles.navlink}>Events</a></Link></li>
                     <li><Link href="#contact"><a className={styles.navlink}>Contact</a></Link></li>
                 </ul>
+
+                <div className={styles.hamburger_icon}>
+                <Image src="/../public/hamburger_icon.png" alt="icon" width='70%' height='70%' objectFit='contain'/>
+                </div>
             </div>
+
+            
             <div className={styles.side_navbar}>
                 <ul>
                     <li><Link href="/"><a class={styles.sidenavlink}>Home</a></Link></li>
@@ -32,6 +38,8 @@ function Nav() {
                     <li><Link href="#contact"><a class={styles.sidenavlink}>Contact</a></Link></li>
                 </ul>
             </div>
+
+        
 
             <div className={styles.buttonContainer}>
                 <div className={styles.up_arrow}>
