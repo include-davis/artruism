@@ -24,10 +24,10 @@ function Footer() {
                 </div>
 
                 <ul className={styles.navMenu}>
-                    <li><Link href="/"><a>Home</a></Link></li>
-                    <li><Link href="#about"><a>About Us</a></Link></li>
-                    <li><Link href="#gallery"><a>Gallery</a></Link></li>
-                    <li><Link href="#contact"><a>Contact</a></Link></li>
+                    <li><Link href="/"><a className={styles.footerlink}>Home</a></Link></li>
+                    <li><Link href="#about"><a className={styles.footerlink}>About Us</a></Link></li>
+                    <li><Link href="#gallery"><a className={styles.footerlink}>Gallery</a></Link></li>
+                    <li><Link href="#contact"><a className={styles.footerlink}>Contact</a></Link></li>
                 </ul>
 
 

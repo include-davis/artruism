@@ -98,6 +98,11 @@
 
 }
 
+.footerlink{
+    text-decoration: none;
+    color:white;
+}
+
 .twitterLogo {
     width: 112px;
     height: 24px;

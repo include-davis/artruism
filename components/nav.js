@@ -38,7 +38,7 @@ function Nav() {
                     <Link href="#top"><Image src="/../public/up_arrow.png" alt="icon" width='50%' height='50%' objectFit='contain'/></Link>
                 </div>
                 <div>
-                    <Link href="#top">Back to Top</Link>
+                    <Link href="#top" ><a className={styles.sidenavlink}>Back to Top</a></Link>
                 </div>
             </div>
 
