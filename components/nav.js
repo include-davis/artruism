@@ -11,7 +11,7 @@ function Nav() {
                     <div className = {styles.logoIcon}>
                     <Image src="/../public/artruism_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
                     </div>
-                    Artruism at UC Davis
+                    <div className= {styles.logo_text}>Artruism at UC Davis</div>
                 </div>
 
                 <ul className={styles.navMenu}>
@@ -23,7 +23,7 @@ function Nav() {
                 </ul>
 
                 <div className={styles.hamburger_icon}>
-                <Image src="/../public/hamburger_icon.png" alt="icon" width='70%' height='70%' objectFit='contain'/>
+                <Image src="/../public/hamburger_icon.png" alt="icon" width='65%' height='65%' objectFit='contain'/>
                 </div>
             </div>
 
