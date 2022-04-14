@@ -29,7 +29,12 @@ function Homepage() {
                 </div>
             </div>
             <div className={styles.downArrow}>
-                <p>Learn More<br/>v</p>
+                <p>Learn More
+                    <br/>
+                    <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.68701 1L13.687 13L25.687 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </p>
             </div>
         </div>
     )

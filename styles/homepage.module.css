@@ -211,9 +211,18 @@
 
 .downArrow{
     margin-top: 2.5%;
-    /*background-color: aqua;*/
     display: flex;
     justify-content: center;
+}
+
+.downArrow p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downArrow svg:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 700px){
