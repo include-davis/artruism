@@ -2,7 +2,7 @@
 
 ## 1. Make a Copy of Google Sheets Template
   
-  * Go to [Template](https://docs.google.com/spreadsheets/d/1l9v_8uz3g0w0sg6UHvpayGowa-bboL77DsTF75Me_bk/edit#gid=0). **Make a copy** for your account.
+  * Go to [Template](https://docs.google.com/spreadsheets/d/1l9v_8uz3g0w0sg6UHvpayGowa-bboL77DsTF75Me_bk/edit#gid=0) on Artruism account with the Google Calendar. **Make a copy** for your account.
 
 ## 2. Get and Copy Calendar ID
   
