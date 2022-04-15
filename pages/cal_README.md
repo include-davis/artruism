@@ -20,6 +20,11 @@
 
    ![alt text](https://i.imgur.com/3lH7h2c.png)
 
-## 5. All Done!
+## 5. Publish Sheet for Us
 
-  * You don't have to do anything else! It will automatically run and connect with the website to update events on your calendar.
+  1. Go to **File** > **Share** > **Publish to Web**.![alt text](https://i.imgur.com/yvgc7ci.png)
+  2. Copy the EXACT settings shown in the gif below. **Sheet2** > **.csv** > **Publish**. Copy the link for us![alt text](https://i.imgur.com/SYBwZH0.gif)
+
+## 6. Give that link to a #include member
+   
+## 7. All Done!
