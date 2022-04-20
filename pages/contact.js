@@ -3,73 +3,56 @@ import Image from 'next/image'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
+//changes the color of the active part of the form 
 if (typeof window === 'object'){
-    document.querySelector("#firstName").addEventListener("input", changeColor_fn);
+    document.querySelector("#firstname_").addEventListener('focus', (event) => {
+        document.getElementById('firstname').style.color = "#A16373";
+    });
+
+    document.querySelector("#lastname_").addEventListener('focus', (event) => {
+        document.getElementById('lastname').style.color = "#A16373";
+    });
+
+    document.querySelector("#email_").addEventListener('focus', (event) => {
+        document.getElementById('email').style.color = "#A16373";
+    });
+
+    document.querySelector("#phone_").addEventListener('focus', (event) => {
+        document.getElementById('phone').style.color = "#A16373";
+    });
+
+    document.querySelector("#reason_").addEventListener('focus', (event) => {
+        document.getElementById('reason').style.color = "#A16373";
+    });
+
+    document.querySelector("#notes_").addEventListener('focus', (event) => {
+        document.getElementById('notes').style.color = "#A16373";
+    });
+
+    document.querySelector("#firstname_").addEventListener('focusout', (event) => {
+        document.getElementById('firstname').style.color = '#00000080';
+    });
+
+    document.querySelector("#lastname_").addEventListener('focusout', (event) => {
+        document.getElementById('lastname').style.color = '#00000080';
+    });
+
+    document.querySelector("#email_").addEventListener('focusout', (event) => {
+        document.getElementById('email').style.color = '#00000080';
+    });
+
+    document.querySelector("#phone_").addEventListener('focusout', (event) => {
+        document.getElementById('phone').style.color = '#00000080';
+    });
+
+    document.querySelector("#reason_").addEventListener('focusout', (event) => {
+        document.getElementById('reason').style.color = '#00000080';
+    });
+
+    document.querySelector("#notes_").addEventListener('focusout', (event) => {
+        document.getElementById('notes').style.color = '#00000080';
+    });
 }
-
-//a bunch of functions to change the color of the active part of the form 
-if (typeof window === 'object'){
-    document.querySelector("#firstName").addEventListener("input", changeColor_fn);
-}
-
-function changeColor_fn(e) {
-    let a = document.getElementById('firstname');
-    a.style.color = "#A16373";
-}
-
-if (typeof window === 'object'){
-    document.querySelector("#lastName").addEventListener("input", changeColor_ln);
-}
-
-function changeColor_ln(e) {
-    let a = document.getElementById('lastname');
-    a.style.color = "#A16373";
-}
-
-if (typeof window === 'object'){
-    document.querySelector("#email_").addEventListener("input", changeColor_e);
-}
-
-function changeColor_e(e) {
-    let a = document.getElementById('email');
-    a.style.color = "#A16373";
-}
-
-if (typeof window === 'object'){
-    document.querySelector("#phone_").addEventListener("input", changeColor_p);
-}
-
-function changeColor_p(e) {
-    let a = document.getElementById('phone');
-    a.style.color = "#A16373";
-}
-
-if (typeof window === 'object'){
-    document.querySelector("#reason_").addEventListener("input", changeColor_r);
-}
-
-function changeColor_r(e) {
-    let a = document.getElementById('reason');
-    a.style.color = "#A16373";
-}
-
-if (typeof window === 'object'){
-    document.querySelector("#notes_").addEventListener("input", changeColor_n);
-}
-
-function changeColor_n(e) {
-    let a = document.getElementById('notes');
-    a.style.color = "#A16373";
-}
-
-// if (typeof window === 'object'){
-//     document.querySelector("#email").addEventListener("input", changeColor_e);
-// }
-
-// function changeColor_e(e) {
-//     let a = document.getElementById('email');
-//     a.style.color = "#A16373";
-// }
 
 // clears form
 const clearForm = () => {
@@ -180,7 +163,7 @@ function Contact() {
                     <div className={styles.containerfirstname}>
                         <div id={"firstname"} className={styles.formlabel}> First name </div>
                         <input
-                            id={"firstName"}
+                            id={"firstname_"}
                             type="text"
                             onChange={(e)=>{setFirstName(e.target.value)}} name='firstName'
                             className={styles.formhalf}
@@ -190,7 +173,7 @@ function Contact() {
                     <div className={styles.containerlastname}>
                         <div id={"lastname"} className={styles.formlabel}> Last name </div>
                         <input
-                            id={"lastName"}
+                            id={"lastname_"}
                             type="text"
                             onChange={(e)=>{setLastName(e.target.value)}} name='lastName'
                             className={styles.formhalf}
