@@ -11,6 +11,16 @@ function Contact() {
     const [reason, setReason] = useState('')
     const [notes, setNotes] = useState('')
     const [submitted, setSubmitted] = useState(false)
+
+    //changes color of active form section title
+    const changefncolor = () => {
+        getElementById("firstName").setAttribute("color", "#A16373")
+    }
+
+    // clears form
+    const clearForm = () => {
+        document.getElementById("newForm").reset()
+    }
     
     const handleSubmit = (e) => {
     e.preventDefault()
@@ -103,10 +113,13 @@ function Contact() {
                 </div>
 
                 <div className={styles.containerform}>
+                <form id="newForm">
                     <div className={styles.containerfirstname}>
                         <div className={styles.formlabel}> First name </div>
                         <input
+                            id={"firstName"}
                             type="text"
+                            onKeyDown={(e) => { changefncolor }} 
                             onChange={(e)=>{setFirstName(e.target.value)}} name='firstName'
                             className={styles.formhalf}
                         />
@@ -158,20 +171,21 @@ function Contact() {
                     </div>
 
                     <div className={styles.containerbuttons}>
-                        <input
-                            value="Clear Form"
-                            type="reset"
-                            className={styles.buttonclear}
-                        />
+                        <button 
+                            type="button" 
+                            onClick={(e) => { clearForm() }} 
+                            className={styles.buttonclear} > 
+                            Clear Form 
+                        </button>
 
-                        <input
-                            value="Submit Form"
+                        <button
                             type="submit"
-                            className={styles.buttonsubmit}
-                        />
+                            onClick={(e) => { handleSubmit(e) }}
+                            className={styles.buttonsubmit} >
+                            Submit Form
+                        </button>
                     </div>
-
-                    < input type='submit' onClick={(e) => { handleSubmit(e) }} />
+                </form>
                 </div>
             </div>
         </div>
