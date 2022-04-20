@@ -3,6 +3,17 @@ import Image from 'next/image'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
+if (typeof window === 'object'){
+    document.querySelector("#firstName").addEventListener("input", changeColor);
+
+}
+
+function changeColor(e) {
+    //alert("hello");
+    let a = document.getElementById('fname');
+    a.style.color = "#A16373";
+}
+
 function Contact() {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
@@ -11,16 +22,6 @@ function Contact() {
     const [reason, setReason] = useState('')
     const [notes, setNotes] = useState('')
     const [submitted, setSubmitted] = useState(false)
-
-    //changes color of active form section title
-    const changefncolor = () => {
-        getElementById("firstName").setAttribute("color", "#A16373")
-    }
-
-    // clears form
-    const clearForm = () => {
-        document.getElementById("newForm").reset()
-    }
     
     const handleSubmit = (e) => {
     e.preventDefault()
@@ -115,11 +116,11 @@ function Contact() {
                 <div className={styles.containerform}>
                 <form id="newForm">
                     <div className={styles.containerfirstname}>
-                        <div className={styles.formlabel}> First name </div>
+                        <div id={"fname"} className={styles.formlabel}> First name </div>
                         <input
                             id={"firstName"}
                             type="text"
-                            onKeyDown={(e) => { changefncolor }} 
+                            //onKeyDown={(e) => { changeColor }} 
                             onChange={(e)=>{setFirstName(e.target.value)}} name='firstName'
                             className={styles.formhalf}
                         />
