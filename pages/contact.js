@@ -4,14 +4,76 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
 if (typeof window === 'object'){
-    document.querySelector("#firstName").addEventListener("input", changeColor);
-
+    document.querySelector("#firstName").addEventListener("input", changeColor_fn);
 }
 
-function changeColor(e) {
-    //alert("hello");
-    let a = document.getElementById('fname');
+//a bunch of functions to change the color of the active part of the form 
+if (typeof window === 'object'){
+    document.querySelector("#firstName").addEventListener("input", changeColor_fn);
+}
+
+function changeColor_fn(e) {
+    let a = document.getElementById('firstname');
     a.style.color = "#A16373";
+}
+
+if (typeof window === 'object'){
+    document.querySelector("#lastName").addEventListener("input", changeColor_ln);
+}
+
+function changeColor_ln(e) {
+    let a = document.getElementById('lastname');
+    a.style.color = "#A16373";
+}
+
+if (typeof window === 'object'){
+    document.querySelector("#email_").addEventListener("input", changeColor_e);
+}
+
+function changeColor_e(e) {
+    let a = document.getElementById('email');
+    a.style.color = "#A16373";
+}
+
+if (typeof window === 'object'){
+    document.querySelector("#phone_").addEventListener("input", changeColor_p);
+}
+
+function changeColor_p(e) {
+    let a = document.getElementById('phone');
+    a.style.color = "#A16373";
+}
+
+if (typeof window === 'object'){
+    document.querySelector("#reason_").addEventListener("input", changeColor_r);
+}
+
+function changeColor_r(e) {
+    let a = document.getElementById('reason');
+    a.style.color = "#A16373";
+}
+
+if (typeof window === 'object'){
+    document.querySelector("#notes_").addEventListener("input", changeColor_n);
+}
+
+function changeColor_n(e) {
+    let a = document.getElementById('notes');
+    a.style.color = "#A16373";
+}
+
+// if (typeof window === 'object'){
+//     document.querySelector("#email").addEventListener("input", changeColor_e);
+// }
+
+// function changeColor_e(e) {
+//     let a = document.getElementById('email');
+//     a.style.color = "#A16373";
+// }
+
+// clears form
+const clearForm = () => {
+    document.getElementById("newForm").reset()
 }
 
 function Contact() {
@@ -116,19 +178,19 @@ function Contact() {
                 <div className={styles.containerform}>
                 <form id="newForm">
                     <div className={styles.containerfirstname}>
-                        <div id={"fname"} className={styles.formlabel}> First name </div>
+                        <div id={"firstname"} className={styles.formlabel}> First name </div>
                         <input
                             id={"firstName"}
                             type="text"
-                            //onKeyDown={(e) => { changeColor }} 
                             onChange={(e)=>{setFirstName(e.target.value)}} name='firstName'
                             className={styles.formhalf}
                         />
                     </div>
 
                     <div className={styles.containerlastname}>
-                        <div className={styles.formlabel}> Last name </div>
+                        <div id={"lastname"} className={styles.formlabel}> Last name </div>
                         <input
+                            id={"lastName"}
                             type="text"
                             onChange={(e)=>{setLastName(e.target.value)}} name='lastName'
                             className={styles.formhalf}
@@ -136,8 +198,9 @@ function Contact() {
                     </div>
                     <br></br>
                     <div className={styles.containeremail}>
-                        <div className={styles.formlabel}> UC Davis email </div>
+                        <div id={"email"} className={styles.formlabel}> UC Davis email </div>
                         <input
+                            id={"email_"}
                             type="text"
                             onChange={(e)=>{setEmail(e.target.value)}} name='email'
                             className={styles.formhalf}
@@ -145,8 +208,9 @@ function Contact() {
                     </div>
 
                     <div className={styles.containerphone}>
-                        <div className={styles.formlabel}> Phone number </div>
+                        <div id={"phone"} className={styles.formlabel}> Phone number </div>
                         <input
+                            id={"phone_"}
                             type="text"
                             onChange={(e) => { setNumber(e.target.value) }} name='number'
                             className={styles.formhalf}
@@ -154,8 +218,9 @@ function Contact() {
                     </div>
 
                     <div className={styles.containerreason}>
-                        <div className={styles.formlabel}> Reason for contact </div>
+                        <div id={"reason"} className={styles.formlabel}> Reason for contact </div>
                         <input
+                            id={"reason_"}
                             type="text"
                             onChange={(e)=>{setReason(e.target.value)}} name='reason'
                             className={styles.formfull}
@@ -163,8 +228,9 @@ function Contact() {
                     </div>
 
                     <div className={styles.containernotes}>
-                        <div className={styles.formlabel}> Additional notes </div>
+                        <div id={"notes"} className={styles.formlabel}> Additional notes </div>
                         <input
+                            id={"notes_"}
                             type="text"
                             onChange={(e)=>{setNotes(e.target.value)}} name='notes'
                             className={styles.formfull}
