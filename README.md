@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Calendar page
+Please refer to the file `cal_README.md` for instructions on linking your calendar to the one displayed on this website.
+
 # Making changes to your website
 ## How to make changes:
 ### Where to find pages
@@ -78,6 +81,8 @@ Upload the image you want into the folder `public`. Navigate to the page you wan
 Update the `src` in that line of code to be
 
 `<img src="public/[NewImageName].png"/>`
+
+###
 
 ## Getting Started
 
