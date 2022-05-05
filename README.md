@@ -109,7 +109,23 @@ Change the `src` of to the new image you uploaded with the method mentioned abov
 
 Locate the header for the name that looks like this: `<h3>Name 4</h3>` and replace "Name 4" with the name of the member you are adding to the roster.
 
-## Getting Started
+# Testing your changes
+The folllowing assumes you have Next.js installed on your computer. 
+If you are using a computer running Windows, please use Git Bash to run the commands. If you are on MacOS or Linux, you do not need to use this.
+
+## Testing the frontend (email will not work)
+Open up a terminal window and run the following commands:
+`cd [path_to_directory]`
+`npm install`
+`npm run dev`
+website will open up at `http://localhost:3000`
+
+When done testing:
+Go back to your terminal and CTRL + C to end the process
+
+## Testing frontend and backend together
+
+# Getting Started
 
 First, run the development server:
 
