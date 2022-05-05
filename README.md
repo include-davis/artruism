@@ -72,6 +72,19 @@ in the id is unique and not the same as any other id in the page. Also make sure
 ### Creating a new component
 To create a new component, create a `.js` file in the `components` folder and a corresponding `.css` file in the `styles folder` and follow the same steps as above.
 
+### How to change text
+Locate the page where the text you are looking to change is located. Navigate to this page at `pages -> [PageName].js`. Locate where the text you are looking for is location. Most often, it will show up in one of these tags:
+
+Headings:
+`<h1> Heading Text </h1>`
+`<h2> Heading Text </h2>`
+`<h3> Heading Text </h3>`
+
+Paragraphs:
+`<p> Paragraph Text </p>`
+
+Replace the placeholder "Heading Text" or "Paragraph Text" or other filler text with whatever content you have. Make sure your text goes between the tags.
+
 ### How to change images
 
 Upload the image you want into the folder `public`. Navigate to the page you want to change in the `pages` folder and find the image you wish you change. It will look something like this:
