@@ -66,6 +66,19 @@ This is the list of pages, in the order they appear on the website. In order to 
 to wherever in the order of pages you wish for your page to appear. Make sure your `[page_name]`
 in the id is unique and not the same as any other id in the page. Also make sure that `[page_name]` is surrounded by quotation marks. Ensure that `FunctionName` is the same as the one in the export statement in you `.js` file.
 
+### Creating a new component
+To create a new component, create a `.js` file in the `components` folder and a corresponding `.css` file in the `styles folder` and follow the same steps as above.
+
+### How to change images
+
+Upload the image you want into the folder `public`. Navigate to the page you want to change in the `pages` folder and find the image you wish you change. It will look something like this:
+
+`<img src="public/OldImageName.png"/>`
+
+Update the `src` in that line of code to be
+
+`<img src="public/[NewImageName].png"/>`
+
 ## Getting Started
 
 First, run the development server:
