@@ -82,7 +82,32 @@ Update the `src` in that line of code to be
 
 `<img src="public/[NewImageName].png"/>`
 
-###
+### How to update your roster
+First, upload a picture of the new member to the folder `public`. Make sure this image is square; otherwise, it may look stretched on the website.
+
+Navigate to the file `pages -> about.js`. Here, you will see a code block that looks like this:
+```
+<div className="col-sm-3 col-sm-2">
+    <div className="card border-dark transform-on-hover">
+        <a className="lightbox" href="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" target="_blank"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" className="card-img-top" /></a>
+        <div className="card-body">
+            <h3>Name 4</h3>
+            <p className="text-muted card-text">Designer Name</p>{/* Facebook */}
+            <FaFacebook/>
+        {/* Instagram */}
+        <FaInstagram/>
+        {/* Linkedin */}
+        <FaLinkedin/>
+        </div>
+    </div><br />
+</div>
+```
+
+Create a new `div` that looks exactly like this example, and locate the `img` tag that looks like this: `<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" className="card-img-top" />` 
+
+Change the `src` of to the new image you uploaded with the method mentioned above, under the header "How to change images"
+
+Locate the header for the name that looks like this: `<h3>Name 4</h3>` and replace "Name 4" with the name of the member you are adding to the roster.
 
 ## Getting Started
 
