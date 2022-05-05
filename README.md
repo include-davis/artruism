@@ -37,7 +37,34 @@ export default FunctionName
 
 `[New_Stylesheet]` in the import statement needs to have the same name as your `.css` file. Make sure `FunctionName` is always capital, and that the FunctionName in the function and the export statement at the end match. 
 
-Once you create a new page, add a link to it in `pages -> index.js`.
+Once you create a new page, add a link to it in `pages -> index.js`. 
+
+To do this, first navigate to `pages -> index.js` and add the following line at the top of the page:
+
+`import FunctionName from '.\[New_Page_Name]'`
+
+Make sure `[New_Page_Name]` is the same name as the `.js` file and `FunctionName` is the same as the one from your export statement in that file.
+
+Then, in you will see a section that looks like the following: 
+
+```
+<div className={styles.container}>
+    <Nav />
+    <div id='home'><Homepage /></div>
+    <div id="about"><About /></div>
+    <div id="gallery"><Gallery /></div>
+    <div id="calendar"><Calendar /></div>
+    <div id="join"><Join /></div>
+    <div id='contact'><Contact /></div>
+    <Footer />       
+</div>
+```
+This is the list of pages, in the order they appear on the website. In order to add your page, add the line 
+
+`<div id="[page_name]">FunctionName</div>`
+
+to wherever in the order of pages you wish for your page to appear. Make sure your `[page_name]`
+in the id is unique and not the same as any other id in the page. Also make sure that `[page_name]` is surrounded by quotation marks. Ensure that `FunctionName` is the same as the one in the export statement in you `.js` file.
 
 ## Getting Started
 
