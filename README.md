@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Making changes to your website
-# How to make changes:
-# Where to find pages
+# Making changes to your website
+## How to make changes:
+### Where to find pages
 You can find pages in the `pages` folder.
 
 ## Getting Started
