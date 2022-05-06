@@ -25,6 +25,10 @@
   1. Go to **File** > **Share** > **Publish to Web**.![alt text](https://i.imgur.com/yvgc7ci.png)
   2. Copy the EXACT settings shown in the gif below. **Sheet2** > **.csv** > **Publish**. Copy the link for us![alt text](https://i.imgur.com/SYBwZH0.gif)
 
-## 6. Give that link to a #include member
+## 6. Put the link in the calendar file
+  1. Locate the file `pages -> calendar.js` and find the line
+  `var spreadsheet_url = ""`
+
+  Copy and paste your calendar link in between the quotation marks in this line. Save and commit your changes. See how to test your changes in `README.md`.
    
 ## 7. All Done!
