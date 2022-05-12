@@ -139,21 +139,21 @@ function Contact() {
                     </div>
                     <div className={styles.containerconnect}>
                         <div className={styles.heading2}> Connect With Us </div>
-                        <Image src="/../public/icons/phone.png" className={styles.icon} alt="phone icon" width={'18%'} height={'18%'} />
+                        <Image src="/icons/phone.png" className={styles.icon} alt="phone icon" width={'18%'} height={'18%'} />
                         <div className={styles.subheading}> (123) 456-7890 </div>
                         <br></br>
-                        <Image src="/../public/icons/mail.png" className={styles.icon} alt="mail icon" width={'20%'} height={'22%'} />
+                        <Image src="/icons/mail.png" className={styles.icon} alt="mail icon" width={'20%'} height={'22%'} />
                         <div className={styles.subheading}> artruismatdavis@gmail.com </div>
                     </div>
                     <div className={styles.containerconnectsocials}>
                         <a href="http://facebook.com">
-                            <Image src="/../public/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'} />
+                            <Image src="/icons/facebook.png" className={styles.icon} alt="facebook icon" width={'15%'} height={'25%'} />
                         </a>
                         <a href="http://instagram.com">
-                            <Image src="/../public/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
+                            <Image src="/icons/instagram.png" className={styles.icon} alt="instagram icon" width={'25%'} height={'25%'} />
                         </a>
                         <a href="http://twitter.com">
-                            <Image src="/../public/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
+                            <Image src="/icons/twitter.png" className={styles.icon} alt="twitter icon" width={'26%'} height={'23%'} />
                         </a>
                     </div>
                 </div>

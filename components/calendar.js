@@ -23,7 +23,7 @@ function FeaturedTile({ featured }) {
   )
 }
 
-export default function Cal() {
+export default function Cal({ events }) {
   function filterEvents({ date }) {
     const startDate = new Date(date.setHours(0, 0, 0, 0)).valueOf()
     const filtered = events.find((event) => {
@@ -33,29 +33,30 @@ export default function Cal() {
     return ''
   }
 
-  const events = [
-    {
-      title: "Bowling @ MU",
-      start: new Date(2022, 1, 24, 15),
-      end: new Date(2022, 1, 24, 16),
-      description: "Come to our social this weekend!"
-      // have an image and locally map to the image
-    },
-    {
-      title: "Social @ Davis Creamery",
-      start: new Date(2022, 1, 25, 16),
-      end: new Date(2022, 1, 25, 17),
-      description: "Come out to our social this weekend at Creamery!",
-    },
-    {
-      title: "Social @ iTea",
-      start: new Date(2022, 1, 28, 16),
-      end: new Date(2022, 1, 28, 17),
-      description: "Come out to our social this weekend at iTea!",
-    },
-  ]
+  // const events = events || [
+  //   {
+  //     title: "Bowling @ MU",
+  //     start: new Date(2022, 1, 24, 15),
+  //     end: new Date(2022, 1, 24, 16),
+  //     description: "Come to our social this weekend!"
+  //     // have an image and locally map to the image
+  //   },
+  //   {
+  //     title: "Social @ Davis Creamery",
+  //     start: new Date(2022, 1, 25, 16),
+  //     end: new Date(2022, 1, 25, 17),
+  //     description: "Come out to our social this weekend at Creamery!",
+  //   },
+  //   {
+  //     title: "Social @ iTea",
+  //     start: new Date(2022, 1, 28, 16),
+  //     end: new Date(2022, 1, 28, 17),
+  //     description: "Come out to our social this weekend at iTea!",
+  //   },
+  // ]
 
   const [date, setDate] = useState(new Date())
+  const [ready, setReady] = useState(false)
   const [featuredIdx, setFeaturedIdx] = useState(events.length - 1)
   const [featured, setFeatured] = useState(events[events.length - 1])
 
@@ -84,9 +85,20 @@ export default function Cal() {
   }
 
   useEffect(() => {
+    console.log(events)
+    events.forEach(event => {
+      event.start = new Date(event.start)
+      event.end = new Date(event.end)
+    })
+    setReady(true)
+  }, [])
+
+  useEffect(() => {
     console.log(featuredIdx)
     setFeatured(events[featuredIdx])
   }, [featuredIdx])
+
+  if (!ready) return null
 
   return (
     <section className={styles.container}>

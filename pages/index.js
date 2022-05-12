@@ -1,17 +1,17 @@
 import Head from 'next/head'
 
-import Homepage from './home'
+import Homepage from '../components/home'
 import About from './about'
 import Gallery from './gallery/index'
-import Calendar from './calendar'
-import Join from './join'
-import Contact from './contact'
+import Calendar from '../components/calendar'
+import Join from '../components/join'
+import Contact from '../components/contact'
 
 import styles from '../styles/Home.module.css'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 
-export default function Home() {
+export default function Home({ events }) {
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -25,7 +25,7 @@ export default function Home() {
         
 
         <div id="gallery"><Gallery /></div>
-        <div id="calendar"><Calendar /></div>
+        <div id="calendar"><Calendar events={events} /></div>
         <div id="join"><Join /></div>
         <div id='contact'><Contact /></div>
         <Footer />
@@ -33,3 +33,30 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps(context) {
+  async function getData(url) {
+    const response = await fetch(url);
+    return response.text();
+  }
+
+  const spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSSN2ukR0aPRwQczan_y4cEjtEPzG6bD8wCwdlhsJHfM-aMDZTbcP0DVU6aQqne9s_rVCbZwYU3F-di/pub?gid=1802867475&single=true&output=csv";
+
+  const data = await getData(spreadsheet_url)
+  const events = data
+    .split(/\r?\n/).map((l) => l.split(","))
+    .map((event) => {
+      // console.log(event)
+      return {
+        title: event[0], description: event[1],
+        start: event[2], end: event[3], duration: event[4]
+      };
+    });
+
+  console.log(events)
+
+  return {
+    props: { events }, // will be passed to the page component as props
+  }
+}
+

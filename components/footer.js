@@ -8,7 +8,7 @@ function Footer() {
             <div className={styles.container}>
                 <div className = {styles.logo}>
                     <div className = {styles.logoIcon}>
-                    <Image src="/../public/artruism_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
+                    <Image src="/artruism_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
                     </div>
 
                     <div className={styles.logoText}>
@@ -32,9 +32,9 @@ function Footer() {
 
 
                 <div className={styles.twitterLogo}>
-                    <Image src="/../public/facebook_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
-                    <Image src="/../public/instagram.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
-                    <Image src="/../public/twitter.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
+                    <Image src="/facebook_logo.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
+                    <Image src="/instagram.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
+                    <Image src="/twitter.png" alt="icon" width='100%' height='100%' objectFit='contain'/>
                 </div>
 
                 <div className={styles.credit}>

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;700&display=swap');
 
-.navlink{
+.navlink {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .navbar {
@@ -29,11 +29,11 @@
 }
 
 .container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FCF7F8;
-    
+    height: 100%;
 }
 
 .logo {
@@ -58,9 +58,9 @@
 }
 
 .navMenu {
-    display:flex;
+    display: flex;
     list-style-type: none;
-
+    margin: 0;
 }
 
 .navMenu li {
@@ -69,12 +69,13 @@
 }
 
 .side_navbar {
-    display:flex;
+    z-index: 10;
+    display: flex;
     color: black;
-    position:fixed;
-    width: 100%;
+    position: fixed;
+    /* width: 100%; */
     height: 178px;
-    top:224px;
+    top: 224px;
     left: 71.69px;
     margin-right: 10rem;
 
@@ -88,9 +89,9 @@
 
 }
 
-.sidenavlink{
+.sidenavlink {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .side_navbar li {
@@ -99,37 +100,41 @@
 }
 
 .buttonContainer {
-    display:flex;
+    position: fixed;
+    display: flex;
     flex-direction: column;
     font-size: 16px;
-    margin-left: 10rem;
-    margin-top: 30rem;
-    margin-right: 5rem;
-    align-items: flex-end;
+    bottom: 160px;
+    right: 120px;
+    z-index: 5;
+    align-items: center;
 }
 
 .up_arrow {
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
 }
 
 .hamburger_icon {
     display: none;
 
 }
-@media only screen and (max-width: 700px) {
 
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
+@media only screen and (max-width: 1200px) {
     .side_navbar {
         display: none;
     }
 
     .buttonContainer {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .navMenu {
@@ -146,7 +151,7 @@
         display: none;
     }
 
-    .logoIcon{
+    .logoIcon {
         margin-left: 1em;
         margin-right: 0;
         margin-top: 1em;
