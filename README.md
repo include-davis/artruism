@@ -5,6 +5,8 @@ Please refer to the file `cal_README.md` for instructions on linking your calend
 
 # Making changes to your website
 ## How to make changes:
+### Edit directly from the browser
+Simply change the current link (https://github.com/include-davis/artruism) to https://github.dev/include-davis/artruism. This should open up this repository in an online editor where you can follow the proceeding steps to make changes.
 ### Where to find pages
 You can find entire pages in the `pages` folder, with file names `[Page_Name].js`.
 Individual components like the nav bar and footer can be found in the `components` folder.
