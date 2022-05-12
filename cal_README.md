@@ -27,8 +27,8 @@
 
 ## 6. Put the link in the calendar file
   1. Locate the file `pages -> calendar.js` and find the line
-  `var spreadsheet_url = ""`
+  `const spreadsheet_url = ""`
 
-  Copy and paste your calendar link in between the quotation marks in this line. Save and commit your changes. See how to test your changes in `README.md`.
+  Remove the existing link, then copy and paste your calendar link in between the quotation marks in this line. Save and commit your changes. See how to test your changes in `README.md`.
    
 ## 7. All Done!
